@@ -1,2 +1,2 @@
-# !/usr/bin/python3
-python3 -c "import this"
+#!/usr/bin/python3
+import this
