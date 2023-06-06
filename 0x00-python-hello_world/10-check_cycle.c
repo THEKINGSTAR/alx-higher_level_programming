@@ -16,15 +16,16 @@ int check_adress(listint_t *list, listint_t *adress)
 
 	while (check != NULL)
 	{
-		if (check->next == node_adress)
+		if (check == node_adress)
 		{
 			adrs_check = 1;
-			free(check);
+			/*free(node_adress); */
+			/*free(check);*/
 			return (adrs_check);
 		}
 		check = check->next;
 	}
-	free(check);
+	/* free(node_adress); */
 	return (adrs_check);
 }
 
@@ -51,6 +52,5 @@ int check_cycle(listint_t *list)
 		}
 		current = current->next;
 	}
-	free(current);
 	return (checker);
 }
