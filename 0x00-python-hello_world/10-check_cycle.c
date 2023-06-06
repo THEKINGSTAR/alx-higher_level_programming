@@ -6,17 +6,18 @@
  * check_adress - check for sililartiyt function
  * @list: list to nodes
  * @adress: adress of the current node
+ * @count: number of nodes to check
  *
  * Return: 0 if not 1 if found simillar
  */
-int check_adress(listint_t *list, listint_t *adress)
+int check_adress(listint_t *list, listint_t *adress, int count)
 {
-	listint_t *check = list, *node_adress = adress;
+	listint_t *check = list, *node_adress = adress->next;
 	int adrs_check = 0;
 
-	while (check != NULL)
+	while (count--)
 	{
-		if (check == node_adress)
+		if (node_adress == check)
 		{
 			adrs_check = 1;
 			/*free(node_adress); */
@@ -40,12 +41,13 @@ int check_adress(listint_t *list, listint_t *adress)
  */
 int check_cycle(listint_t *list)
 {
-	int checker = 0;
+	int checker = 0, count = 0;
 	listint_t *current = list;
 
 	while (current != NULL)
 	{
-		checker = check_adress(list, current);
+		count++;
+		checker = check_adress(list, current, count);
 		if (checker == 1)
 		{
 			return (checker);

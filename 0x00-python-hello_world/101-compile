@@ -1,0 +1,12 @@
+#!/bin/bash
+#!/usr/bin/python3
+
+PYFILE="$PYFILE"
+BASENAME=$(basename "$PYFILE" ".py")
+OUTPUT_FILE="$BASENAME.pyc"
+
+python3 -m py_compile "$PYFILE"  
+
+mv "__pycache__/$BASENAME.pyc" "$OUTPUT_FILE"
+rm -r "__pycache__"
+
