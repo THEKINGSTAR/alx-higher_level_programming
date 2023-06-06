@@ -1,6 +1,5 @@
-# 0x00. Python - Hello, World
+# Python
 ## Concepts
-## For this project, we expect you to look at this concept:
 
 ![alt text](https://github.com/THEKINGSTAR/alx-higher_level_programming/blob/main/python.jpg?raw=true)
 
