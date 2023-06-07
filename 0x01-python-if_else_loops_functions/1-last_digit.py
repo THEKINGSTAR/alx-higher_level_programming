@@ -13,7 +13,7 @@ if the last digit is less than 6 and not 0:
 the string and is less than 6 and not 0
 followed by a new line
 """
-if number > 0:
+if number >= 0:
     last_digit = (number % 10)
     if last_digit > 5:
         greater_less = "greater than 5"
