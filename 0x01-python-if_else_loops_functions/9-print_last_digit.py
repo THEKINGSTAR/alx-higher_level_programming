@@ -6,6 +6,7 @@ def print_last_digit(number):
     elif number < 0:
         tmp = number * -1
         last_digit = (tmp % 10)
+    print(last_digit)
     return (last_digit)
 
 
