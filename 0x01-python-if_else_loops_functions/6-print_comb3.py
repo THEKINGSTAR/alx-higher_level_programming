@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-for f in range(i, 10):
-
-    if num != 99:
-        print("{:02d}, ".format(num), end="")
-    elif num == 99:
-        print("{}".format(num))
+for o in range(0, 10):
+    for t in range(1, 10):
+        if (o != 8 and t != 9):
+            if o != t and o < t:
+                print(f"{o}{t}, ", end="")
+        elif o == 8 and t == 9:
+            print(f"{o}{t}")
