@@ -24,9 +24,7 @@ if number > 0:
 elif number < 0:
     tmp = number * -1
     last_digit = (tmp % 10) * -1
-    if last_digit > 5:
-        greater_less = "greater than 5"
-    elif last_digit == 0:
+    if last_digit == 0:
         greater_less = "and is 0"
     elif last_digit < 5:
         greater_less = "less than 6 and not 0"
