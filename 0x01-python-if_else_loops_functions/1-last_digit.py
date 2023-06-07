@@ -31,6 +31,8 @@ elif number < 0:
 
 
 print(f"Last digit of {number} is {last_digit} and is {greater_less}")
+
+
 """
 guillaume@ubuntu:~/0x01$ ./1-last_digit.py
 Last digit of 4205 is 5 and is less than 6 and not 0
