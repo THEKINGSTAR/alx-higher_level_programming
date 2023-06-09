@@ -1,266 +1,106 @@
-0x02. Python - import & modules
-Python
- By: Guillaume
- Weight: 1
- Project will start Jun 8, 2023 6:00 AM, must end by Jun 9, 2023 6:00 AM
- Checker was released at Jun 8, 2023 12:00 PM
- An auto review will be launched at the deadline
-Resources
-Read or watch:
+# Python
+## Concepts
 
-Modules
-Command line arguments
-Pycodestyle – Style Guide for Python Code
-man or help:
+![alt text](https://github.com/THEKINGSTAR/alx-higher_level_programming/blob/main/python.jpg?raw=true)
 
-python3
-Learning Objectives
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
-
-General
-Why Python programming is awesome
-How to import functions from another file
-How to use imported functions
-How to create a module
-How to use the built-in function dir()
-How to prevent code in your script from being executed when imported
-How to use command line arguments with your Python programs
-Copyright - Plagiarism
-You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
-You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
-You are not allowed to publish any content of this project.
-Any form of plagiarism is strictly forbidden and will result in removal from the program.
-Requirements
-General
-Allowed editors: vi, vim, emacs
-All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
-All your files should end with a new line
-The first line of all your files should be exactly #!/usr/bin/python3
-A README.md file, at the root of the folder of the project, is mandatory
-Your code should use the pycodestyle (version 2.8.*)
-All your files must be executable
-The length of your files will be tested using wc
-Quiz questions
-Great! You've completed the quiz successfully! Keep going! (Show quiz)
-Tasks
-0. Import a simple function from a simple file
-mandatory
-Write a program that imports the function def add(a, b): from the file add_0.py and prints the result of the addition 1 + 2 = 3
-
-You have to use print function with string format to display integers
-You have to assign:
-the value 1 to a variable called a
-the value 2 to a variable called b
-and use those two variables as arguments when calling the functions add and print
-a and b must be defined in 2 different lines: a = 1 and another b = 2
-Your program should print: <a value> + <b value> = <add(a, b) value> followed with a new line
-You can only use the word add_0 once in your code
-You are not allowed to use * for importing or __import__
-Your code should not be executed when imported - by using __import__, like the example below
-guillaume@ubuntu:~/0x02$ cat add_0.py
-#!/usr/bin/python3
-def add(a, b):
-    """My addition function
-
-    Args:
-        a: first integer
-        b: second integer
-
-    Returns:
-        The return value. a + b
-    """
-    return (a + b)
-
-guillaume@ubuntu:~/0x02$ ./0-add.py
-1 + 2 = 3
-guillaume@ubuntu:~/0x02$ cat 0-import_add.py
-__import__("0-add")
-guillaume@ubuntu:~/0x02$ python3 0-import_add.py 
-guillaume@ubuntu:~/0x02$ 
-Repo:
-
-GitHub repository: alx-higher_level_programming
-Directory: 0x02-python-import_modules
-File: 0-add.py
-   
-1. My first toolbox!
-mandatory
-Write a program that imports functions from the file calculator_1.py, does some Maths, and prints the result.
-
-Do not use the function print (with string format to display integers) more than 4 times
-You have to define:
-the value 10 to a variable a
-the value 5 to a variable b
-and use those two variables only, as arguments when calling functions (including print)
-a and b must be defined in 2 different lines: a = 10 and another b = 5
-Your program should call each of the imported functions. See example below for format
-the word calculator_1 should be used only once in your file
-You are not allowed to use * for importing or __import__
-Your code should not be executed when imported
-guillaume@ubuntu:~/0x02$ cat calculator_1.py
-#!/usr/bin/python3
-def add(a, b):
-    """My addition function
-
-    Args:
-        a: first integer
-        b: second integer
-
-    Returns:
-        The return value. a + b
-    """
-    return (a + b)
+# Python programming
 
 
-def sub(a, b):
-    """My subtraction function
+## Author’s disclaimer
+Welcome to the Python world!
 
-    Args:
-        a: first integer
-        b: second integer
+### The first projects are more "C-oriented" - no tricks, no funky syntax - simple!
+>- # If you've already played with Python, don't worry, fun things will come.
+>- # You'll soon find that with Python (and the majority of higher level languages), there are ten different ways to do the same thing. Some tasks will expect only one implementation, while other tasks will have multiple possible implementations.
+>- # Like C, Python also has a linter / style guide like Betty, called PEP8, also now known as PyCode.
+>- # Enjoy!
 
-    Returns:
-        The return value. a - b
-    """
-    return (a - b)
+>- # - Guillaume
 
+# Resources
+## Read or watch:
 
-def mul(a, b):
-    """My multiplication function
+>- The Python tutorial (only the first three chapters below)
+>- Whetting Your Appetite
+>- Using the Python Interpreter
+>- An Informal Introduction to Python (Read up until “3.1.2. Strings” included)
+>- How To Use String Formatters in Python 3
+>- Learn to Program
+>- Pycodestyle – Style Guide for Python Code
+>- Learning Objectives
+>- ## At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
-    Args:
-        a: first integer
-        b: second integer
+## General
+>- Why Python programming is awesome
+>- Who created Python
+>- Who is Guido van Rossum
+>- Where does the name ‘Python’ come from
+>- What is the Zen of Python
+>- How to use the Python interpreter
+>- How to print text and variables using print
+>- How to use strings
+>- What are indexing and slicing in Python
+>- What is the official Python >- coding style and how to check your code with pycodestyle
 
-    Returns:
-        The return value. a * b
-    """
-    return (a * b)
+# Copyright - Plagiarism
+>- You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
+>- You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
+>- You are not allowed to publish any content of this project.
+>- Any form of plagiarism is strictly forbidden and will result in removal from the program.
 
+## Requirements
+>- Python Scripts
+>- Allowed editors: vi, vim, emacs
+>- All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
+>- All your files should end with a new line
+>- The first line of all your files should be exactly #!/usr/bin/python3
+>- A README.md file at the root of the repo, containing a description of the repository
+>- A README.md file, at the root of the folder of this project, is mandatory
+>- Your code should use the pycodestyle (version 2.8.*)
+>- All your files must be executable
+>- The length of your files will be tested using wc
+>- Shell Scripts
+>- Allowed editors: vi, vim, emacs
+>- All your scripts will be tested on Ubuntu 20.04 LTS
+>- All your scripts should be exactly two lines long (wc -l file should print 2)
+>- All your files should end with a new line
+>- The first line of all your files should be exactly #!/bin/bash
+>- All your files must be executable
+>- C Scripts
+>- Allowed editors: vi, vim, emacs
+>- All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
+>- All your files should end with a new line
+>- Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
+>- You are not allowed to use global variables
+>- No more than 5 functions per file
+>- In the following examples, the main.c files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own main.c files at compilation. Our main.c files might be different from the one shown in the examples
+The prototypes of all your functions should be included in your header file called lists.h
+Don’t forget to push your header file
+All your header files should be include guarded
+### More Info
 
-def div(a, b):
-    """My division function
+# Zen
 
-    Args:
-        a: first integer
-        b: second integer
+>- The Zen of Python, by Tim Peters
+>- Beautiful is better than ugly.
+>- Explicit is better than implicit.
+>- Simple is better than complex.
+>- Complex is better than complicated.
+>- Flat is better than nested.
+>- Sparse is better than dense.
+>- Readability counts.
+>- Special cases aren't special enough to break the rules.
+>- Although practicality beats purity.
+>- Errors should never pass silently.
+>- Unless explicitly silenced.
+>- In the face of ambiguity, refuse the temptation to guess.
+>- There should be one-- and preferably only one --obvious way to do it.
+>- Although that way may not be obvious at first unless you're Dutch.
+>- Now is better than never.
+>- Although never is often better than *right* now.
+>- If the implementation is hard to explain, it's a bad idea.
+>- If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
 
-    Returns:
-        The return value. a / b
-    """
-    return int(a / b)
-
-guillaume@ubuntu:~/0x02$ ./1-calculation.py
-10 + 5 = 15
-10 - 5 = 5
-10 * 5 = 50
-10 / 5 = 2
-guillaume@ubuntu:~/0x02$
-Repo:
-
-GitHub repository: alx-higher_level_programming
-Directory: 0x02-python-import_modules
-File: 1-calculation.py
-   
-2. How to make a script dynamic!
-mandatory
-Write a program that prints the number of and the list of its arguments.
-
-The output should be:
-Number of argument(s) followed by argument (if number is one) or arguments (otherwise), followed by
-: (or . if no arguments were passed) followed by
-a new line, followed by (if at least one argument),
-one line per argument:
-the position of the argument (starting at 1) followed by :, followed by the argument value and a new line
-Your code should not be executed when imported
-The number of elements of argv can be retrieved by using: len(argv)
-You do not have to fully understand lists yet, but imagine that argv can be used just like a C array: you can use an index to walk through it. There are other ways (which will be preferred for future project tasks), if you know them you can use them.
-guillaume@ubuntu:~/0x02$ ./2-args.py 
-0 arguments.
-guillaume@ubuntu:~/0x02$ ./2-args.py Hello
-1 argument:
-1: Hello
-guillaume@ubuntu:~/0x02$ ./2-args.py Hello Welcome To The Best School
-6 arguments:
-1: Hello
-2: Welcome
-3: To
-4: The
-5: Best
-6: School
-guillaume@ubuntu:~/0x02$ 
-Repo:
-
-GitHub repository: alx-higher_level_programming
-Directory: 0x02-python-import_modules
-File: 2-args.py
-   
-3. Infinite addition
-mandatory
-Write a program that prints the result of the addition of all arguments
-
-The output should be the result of the addition of all arguments, followed by a new line
-You can cast arguments into integers by using int() (you can assume that all arguments can be casted into integers)
-Your code should not be executed when imported
-guillaume@ubuntu:~/0x02$ ./3-infinite_add.py
-0
-guillaume@ubuntu:~/0x02$ ./3-infinite_add.py 79 10
-89
-guillaume@ubuntu:~/0x02$ ./3-infinite_add.py 79 10 -40 -300 89 
--162
-guillaume@ubuntu:~/0x02$ 
-Last but not least, your program should also handle big numbers. And the good news is: if your program works for the above example, it will work for the following example:
-
-guillaume@ubuntu:~/0x02$ ./3-infinite_add.py 1111111111111111111111111111111111111111111111111111111111112222222222222222222222222222222222223435467866765443534434222222254444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555666666666666666666666666666666777777777777777777777777777777888888888888888888888888888888899999999999999999999999990000000000000000000 11111111111111111111111111111111111111111111111111222222222222222222222222222333333333333333333334567788888899999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
-11111111111111111111111111111111111111111111111111222222222222222222222222222333333333333333333334568900000011111111111111111111111111111111111111111111111111112222222222222222222222222222222222223435467866765443534434222222254444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555666666666666666666666666666666777777777777777777777777777777888888888888888888888888888888899999999999999999999999989999999999999999999
-guillaume@ubuntu:~/0x02$
-Remember how you did (or did not) do it in C? #pythoniscool
-
-
-
-Repo:
-
-GitHub repository: alx-higher_level_programming
-Directory: 0x02-python-import_modules
-File: 3-infinite_add.py
-   
-4. Who are you?
-mandatory
-Write a program that prints all the names defined by the compiled module hidden_4.pyc (please download it locally).
-
-You should print one name per line, in alpha order
-You should print only names that do not start with __
-Your code should not be executed when imported
-Make sure you are running your code in Python3.8.x (hidden_4.pyc has been compiled with this version)
-guillaume@ubuntu:~/0x02$ curl -Lso "hidden_4.pyc" "https://github.com/alx-tools/0x02.py/raw/master/hidden_4.pyc"
-guillaume@ubuntu:~/0x02$ ./4-hidden_discovery.py | sort
-my_secret_santa
-print_hidden
-print_school
-guillaume@ubuntu:~/0x02$ 
-Repo:
-
-GitHub repository: alx-higher_level_programming
-Directory: 0x02-python-import_modules
-File: 4-hidden_discovery.py
-   
-5. Everything can be imported
-mandatory
-Write a program that imports the variable a from the file variable_load_5.py and prints its value.
-
-You are not allowed to use * for importing or __import__
-Your code should not be executed when imported
-guillaume@ubuntu:~/0x02$ cat variable_load_5.py
-#!/usr/bin/python3
-a = 98
-"""Simple variable
-"""
-
-guillaume@ubuntu:~/0x02$ ./5-variable_load.py
-98
-guillaume@ubuntu:~/0x02$
-Repo:
-
-GitHub repository: alx-higher_level_programming
-Directory: 0x02-python-import_modules
-File: 5-variable_load.py
+# Pycodestyle
+>- ### Pycodestyle is now the new standard of Python style code
