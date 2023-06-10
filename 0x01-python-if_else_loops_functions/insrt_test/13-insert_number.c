@@ -22,10 +22,14 @@ listint_t *insert_node(listint_t **head, int number)
 
 	current = *head;
 	prev = NULL;
-	if (current == NULL || head == NULL)
-		return (NULL);
 	insrt = malloc(sizeof(listint_t));
 	insrt->n = number;
+	if (current == NULL)
+	{
+		insrt->next = prev;
+		return (insrt);
+	}
+
 	/*printf("number to insert : %d\n",number);*/
 	while (current != NULL)
 	{
