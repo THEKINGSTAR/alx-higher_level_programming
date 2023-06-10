@@ -41,6 +41,34 @@ int check_adress(listint_t *list, listint_t *adress, int count)
  */
 int check_cycle(listint_t *list)
 {
+	int checker = 0;
+	listint_t *current = list, *cyc_check = current->next;
+
+	while (current != NULL && cyc_check != NULL)
+	{
+		if (current == cyc_check)
+		{
+			checker = 1;
+			return (checker);
+		}
+		current = current->next;
+		if (cyc_check->next != NULL)
+			cyc_check = cyc_check->next;
+		cyc_check = cyc_check->next;
+	}
+	return (checker);
+}
+/**
+ * _check_cycle - check function
+ * Write a function in C that checks if a singly linked list has a cycle in it.
+ * Prototype: int check_cycle(listint_t *list);
+ * @list: list to check the cycle exist or not
+ * Return: 0 if there is no cycle, 1 if there is a cycle
+ * Requirements:
+ * Only these functions are allowed: write, printf, putchar, puts, malloc, free
+ */
+int _check_cycle(listint_t *list)
+{
 	int checker = 0, count = 0;
 	listint_t *current = list;
 
