@@ -22,7 +22,7 @@ listint_t *insert_node(listint_t **head, int number)
 
 	current = *head;
 	prev = NULL;
-	if (current == NULL)
+	if (current == NULL || head == NULL)
 		return (NULL);
 	insrt = malloc(sizeof(listint_t));
 	insrt->n = number;
