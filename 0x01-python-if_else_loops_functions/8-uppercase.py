@@ -8,17 +8,22 @@ You can only use one loop in your code
 You are not allowed to import any module
 You are not allowed to use str.upper() and str.isupper()
 '''
-import string
 
-def uppercase(str):
+
+def uppercase(stri):
     nstr = ""
     upp = ""
-    for c in str[:]:
+    word = list(stri)
+    # print(word)
+    for c in word:
         if (ord(c) > 96) and (ord(c) < 123):
             ch = ord(c) - 32
             upp = chr(ch)
             nstr = nstr + upp
+            continue
         elif (ord(c) > 48) and (ord(c) < 58):
-           nstr = nstr + str(c) 
+            nstr = nstr + str.format(c)
+            continue
+        else:
+            nstr = nstr + c
     print(nstr)
-    return (nstr)
