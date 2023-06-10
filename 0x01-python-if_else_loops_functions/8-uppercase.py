@@ -26,4 +26,4 @@ def uppercase(stri):
             continue
         else:
             nstr = nstr + c
-    print(nstr)
+    print(f"{nstr}")
