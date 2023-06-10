@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 # Returns True if c is lowercase
 # Returns False otherwise
 def islower(c):
