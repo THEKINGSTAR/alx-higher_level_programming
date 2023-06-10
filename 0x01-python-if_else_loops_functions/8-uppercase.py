@@ -24,6 +24,6 @@ def uppercase(stri):
             nstr = nstr + str.format(c)
         else:
             nstr = nstr + c
-    print(f"{nstr}", end="")
+    print("{}".format(nstr), end="")
     print("")
 
