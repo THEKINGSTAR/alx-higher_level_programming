@@ -20,10 +20,8 @@ def uppercase(stri):
             ch = ord(c) - 32
             upp = chr(ch)
             nstr = nstr + upp
-            continue
         elif (ord(c) > 48) and (ord(c) < 58):
             nstr = nstr + str.format(c)
-            continue
         else:
             nstr = nstr + c
     print(f"{nstr}")
