@@ -22,23 +22,35 @@ listint_t *insert_node(listint_t **head, int number)
 
 	current = *head;
 	prev = NULL;
-	if (current == NULL)
-		return (NULL);
 	insrt = malloc(sizeof(listint_t));
+	insrt->n = number;
+	if (current == NULL)
+	{
+		*head = insrt;
+		return (*head);
+	}
+
+	/*printf("number to insert : %d\n",number);*/
 	while (current != NULL)
 	{
 		prev = current;
 		current = current->next;
 		if (prev == NULL)
 		{
-			insrt = prev;
+			insrt->next = prev;
+			return (insrt);
+		}
+		if (insrt->n < prev->n)
+		{
+			/*printf("inside insert\n");*/
+			insrt->next = prev;
+			prev->next = current;
 			return (insrt);
 		}
 		if (prev->n < number && current->n > number)
 		{
 			insrt->next = current;
 			prev->next = insrt;
-			insrt->n = number;
 			return (insrt);
 		}
 
