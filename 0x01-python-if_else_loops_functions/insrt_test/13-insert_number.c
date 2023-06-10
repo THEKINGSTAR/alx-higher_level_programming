@@ -26,8 +26,8 @@ listint_t *insert_node(listint_t **head, int number)
 	insrt->n = number;
 	if (current == NULL)
 	{
-		current = insrt;
-		return (insrt);
+		*head = insrt;
+		return (*head);
 	}
 
 	/*printf("number to insert : %d\n",number);*/
