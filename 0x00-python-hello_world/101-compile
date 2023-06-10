@@ -1,12 +1,8 @@
-#!/bin/bash
 #!/usr/bin/python3
-
-PYFILE="$PYFILE"
-BASENAME=$(basename "$PYFILE" ".py")
-OUTPUT_FILE="$BASENAME.pyc"
-
-python3 -m py_compile "$PYFILE"  
-
-mv "__pycache__/$BASENAME.pyc" "$OUTPUT_FILE"
-rm -r "__pycache__"
-
+import py_compile
+import os
+# pyfile = '$PYFILE'
+pyfile = os.getenv('PYFILE')
+pycfile = pyfile + 'c'
+py_compile.compile(pyfile, pycfile, 'exec')
+# py_compile.compile(pyfile)
