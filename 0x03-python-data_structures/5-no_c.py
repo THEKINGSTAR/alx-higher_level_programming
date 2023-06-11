@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 def no_c(my_string):
-    ns = my_string.replace("C", "")
-    ns = ns.replace("c", "")
-    return (ns)
+    strn = ""
+    for ch in my_string:
+        if ch == "c" or ch == "C":
+            continue
+        strn = strn + ch
+    return (strn)
