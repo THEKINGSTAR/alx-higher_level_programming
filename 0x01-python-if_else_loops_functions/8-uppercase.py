@@ -14,7 +14,6 @@ def uppercase(stri):
     nstr = ""
     upp = ""
     word = list(stri)
-    # print(word)
     for c in word:
         if (ord(c) > 96) and (ord(c) < 123):
             ch = ord(c) - 32
