@@ -41,10 +41,10 @@ int is_palindrome(listint_t **head)
 	{	arry[idx] = start->n;
 		start = start->next;
 		idx++;	}
+	free(start);
 	if (lenght % 2 != 0)
 	{
 		is_pm = odd_is_palindrome(arry, lenght);
-		free(arry);
 		return (is_pm);
 	}
 	for (idx = 0; idx < lenght; idx++)
@@ -69,7 +69,7 @@ int is_palindrome(listint_t **head)
  * Write a function in C that checks if a singly linked list is a palindrome.
  * Prototype: int is_palindrome(listint_t **head);
  *
- * @arry: array of the elements to check;
+ * @array: array of the elements to check;
  * @lenght: lenght of the array
  *
  * Return: 0 if it is not a palindrome,
@@ -78,10 +78,11 @@ int is_palindrome(listint_t **head)
  * An empty list is considered a palindrome
  *
  */
-int odd_is_palindrome(int *arry, int lenght)
+int odd_is_palindrome(int *array, int lenght)
 {
-	int is_pm = 1,	idx = 0;
+	int is_pm = 1,	idx = 0, *arry;
 
+	arry = array;
 	for (idx = 0; idx < lenght / 2; idx++)
 	{
 		if (arry[idx] != arry[lenght - idx - 1])
