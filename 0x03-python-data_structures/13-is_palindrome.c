@@ -25,54 +25,6 @@ listint_t *revrs_list(listint_t *head)
 }
 
 /**
- * is_palindrome - check palindrome function
- *
- * Technical interview preparation:
- * You are not allowed to google anything
- * Whiteboard first
- * Write a function in C that checks if a singly linked list is a palindrome.
- * Prototype: int is_palindrome(listint_t **head);
- *
- * @head: head of the linked_list to check;
- *
- * Return: 0 if it is not a palindrome,
- * 1 if it is a palindrome
- *
- * An empty list is considered a palindrome
- *
- */
-int is_palindrome(listint_t **head)
-{
-	int is_pm = 0, s, r;
-	listint_t *start, *reversed;
-
-	start = *head;
-	if (start == NULL || start->next == NULL)
-	{	is_pm = 1;
-		return (is_pm);
-	}
-	reversed = revrs_list(*head);
-	while (start != NULL)
-	{
-		s = start->n;
-		r = reversed->n;
-		/*printf("COMPARE BETWEEN Start Value %d , Reverse Value %d\n", s, r);*/
-		if (s != r)
-		{
-			/*printf("DIFFRENT VALUES ARE Start Value %d , Reverse Value %d\n", s, r);*/
-			return (is_pm);
-		}
-		start = start->next;
-		reversed = reversed->next;
-	}
-	is_pm = 1;
-	return (is_pm);
-}
-
-
-
-
-/**
  * _is_palindrome - check palindrome function
  *
  * Technical interview preparation:
@@ -90,6 +42,54 @@ int is_palindrome(listint_t **head)
  *
  */
 int _is_palindrome(listint_t **head)
+{
+	int is_pm = 0, s, r;
+	listint_t *start, *reversed;
+
+	start = *head;
+	if (start == NULL || start->next == NULL)
+	{	is_pm = 1;
+		return (is_pm);
+	}
+	reversed = revrs_list(*head);
+	while (start != NULL && start == reversed)
+	{
+		s = start->n;
+		r = reversed->n;
+		printf("COMPARE BETWEEN Start Value %d , Reverse Value %d\n", s, r);
+		if (s != r)
+		{
+			printf("DIFFRENT VALUES ARE Start Value %d , Reverse Value %d\n", s, r);
+			return (is_pm);
+		}
+		start = start->next;
+		reversed = reversed->next;
+	}
+	is_pm = 1;
+	return (is_pm);
+}
+
+
+
+
+/**
+ * is_palindrome - check palindrome function
+ *
+ * Technical interview preparation:
+ * You are not allowed to google anything
+ * Whiteboard first
+ * Write a function in C that checks if a singly linked list is a palindrome.
+ * Prototype: int is_palindrome(listint_t **head);
+ *
+ * @head: head of the linked_list to check;
+ *
+ * Return: 0 if it is not a palindrome,
+ * 1 if it is a palindrome
+ *
+ * An empty list is considered a palindrome
+ *
+ */
+int is_palindrome(listint_t **head)
 {
 	int is_pm = 0, s, r;
 	listint_t *start;
