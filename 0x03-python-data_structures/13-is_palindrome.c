@@ -19,6 +19,7 @@
 int is_palindrome(listint_t **head)
 {
 	int is_pm = 0, lenght = 0;
+	int *arry, idx = 0;
 	listint_t *start;
 
 	start = *head;
@@ -34,7 +35,6 @@ int is_palindrome(listint_t **head)
 	if (lenght % 2 != 0)
 	{	/*printf("lenght not divided by 2\n");*/
 		return (is_pm);	}
-	int *arry, idx = 0;
 
 	start = *head;
 	arry = malloc(sizeof(int) * lenght);
