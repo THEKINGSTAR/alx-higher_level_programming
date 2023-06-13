@@ -1,5 +1,9 @@
 #include "lists.h"
 
+
+
+int raverse_revers(listint_t *head);
+
 /**
  * is_palindrome - check palindrome function
  *
@@ -19,45 +23,61 @@
  */
 int is_palindrome(listint_t **head)
 {
-	int is_pm = 0, lenght = 0, lop_lenght = 0, *arry, idx = 0;
+	int is_pm = 0, s, r;
 	listint_t *start;
 
 	start = *head;
-	if (start == NULL)
+	if (start == NULL || start->next == NULL)
 	{	is_pm = 1;
 		return (is_pm);
 	}
 	while (start != NULL)
-	{	start = start->next;
-		lenght++;
-	}
-	start = *head;
-	arry = malloc(sizeof(int) * lenght);
-	while (start != NULL)
-	{	arry[idx] = start->n;
-		start = start->next;
-		idx++;
-	}
-	lop_lenght = lenght;
-	if (lenght % 2 != 0)
 	{
-		if (lenght == 1)
+		s = start->n;
+		r = raverse_revers(start);
+		/*printf("COMPARE BETWEEN Start Value %d , Reverse Value %d\n", s, r);*/
+		if (s != r)
 		{
-			is_pm = 1;
-			free(arry);
+			/*printf("DIFFRENT VALUES ARE Start Value %d , Reverse Value %d\n", s, r);*/
 			return (is_pm);
 		}
-		lop_lenght = lenght / 2;
+		start = start->next;
 	}
-	for (idx = 0; idx < lop_lenght; idx++)
-	{
-		if (arry[idx] != arry[lenght - idx - 1])
-		{	free(start);
-			free(arry);
-			return (is_pm);
-		}
-	}
-	free(arry);
+	free(start);
 	is_pm = 1;
 	return (is_pm);
+}
+/**
+ * raverse_revers - reverse traverse linkd list
+ *
+ * @head: the head of the list
+ *
+ * Return: return the value of the last node in
+ * in the list
+ */
+int raverse_revers(listint_t *head)
+{
+	int val;
+	listint_t *start, *prev;
+
+	if (head->next == NULL)
+		return (head->n);
+
+	prev = head;
+	start = prev->next;
+	while (prev->next != NULL)
+	{
+		/*printf("s: %d \n", prev->n);*/
+		if (start->next == NULL)
+		{
+			val = start->n;
+			free(start);
+			prev->next = NULL;
+			continue;
+		}
+
+		start = start->next;
+		prev = prev->next;
+	}
+	return (val);
 }
