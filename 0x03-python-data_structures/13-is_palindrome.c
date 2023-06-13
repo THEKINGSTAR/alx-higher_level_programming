@@ -18,8 +18,7 @@
  */
 int is_palindrome(listint_t **head)
 {
-	int is_pm = 0, lenght = 0;
-	int *arry, idx = 0;
+	int is_pm = 0, lenght = 0, *arry, idx = 0;
 	listint_t *start;
 
 	start = *head;
@@ -27,22 +26,27 @@ int is_palindrome(listint_t **head)
 	{	is_pm = 1;
 		return (is_pm);	}
 	while (start != NULL)
-	{
-		start = start->next;
-		lenght++;
-	}
+	{	start = start->next;
+		lenght++;	}
 	if (lenght == 1)
 	{	is_pm = 1;
 		return (is_pm);	}
-	if (lenght % 2 != 0)
-	{	return (is_pm);	}
-
 	start = *head;
 	arry = malloc(sizeof(int) * lenght);
 	while (start != NULL)
 	{	arry[idx] = start->n;
 		start = start->next;
-		idx++;
+		idx++;	}
+	if (lenght % 2 != 0)
+	{
+		for (idx = 0; idx < lenght / 2; idx++)
+		{
+			if (arry[idx] != arry[lenght - idx - 1])
+			{	is_pm = 0;
+				free(arry);
+				free(start);
+				return (is_pm);	}
+		}
 	}
 	for (idx = 0; idx < lenght; idx++)
 	{
@@ -50,14 +54,11 @@ int is_palindrome(listint_t **head)
 		{	is_pm = 0;
 			free(arry);
 			free(start);
-			return (is_pm);
-		}
+			return (is_pm);		}
 	}
 	free(arry);
-	free(start);
 	is_pm = 1;
-	return (is_pm);
-}
+	return (is_pm);	}
 
 /**
  * _is_palindrome - check palindrome function
