@@ -52,9 +52,12 @@ int is_palindrome(listint_t **head)
 		{
 			is_pm = 0;
 			free(arry);
+			free(start);
 			return (is_pm);
 		}
 	}
+	free(arry);
+	free(start);
 	is_pm = 1;
 	return (is_pm);
 }
