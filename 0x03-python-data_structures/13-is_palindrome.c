@@ -50,11 +50,12 @@ int is_palindrome(listint_t **head)
 	for (idx = 0; idx < lop_lenght; idx++)
 	{
 		if (arry[idx] != arry[lenght - idx - 1])
-		{	is_pm = 0;
+		{	free(start);
 			free(arry);
 			return (is_pm);
 		}
 	}
+	free(start);
 	free(arry);
 	is_pm = 1;
 	return (is_pm);
