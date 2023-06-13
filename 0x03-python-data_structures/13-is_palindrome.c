@@ -28,19 +28,23 @@ int is_palindrome(listint_t **head)
 	start = *head;
 	if (start == NULL)
 	{	is_pm = 1;
-		return (is_pm);	}
+		return (is_pm);
+	}
 	while (start != NULL)
 	{	start = start->next;
-		lenght++;	}
+		lenght++;
+	}
 	if (lenght == 1)
 	{	is_pm = 1;
-		return (is_pm);	}
+		return (is_pm);
+	}
 	start = *head;
 	arry = malloc(sizeof(int) * lenght);
 	while (start != NULL)
 	{	arry[idx] = start->n;
 		start = start->next;
-		idx++;	}
+		idx++;
+	}
 	if (lenght % 2 != 0)
 	{
 		is_pm = odd_is_palindrome(arry, lenght);
