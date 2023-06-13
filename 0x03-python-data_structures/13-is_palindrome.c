@@ -44,9 +44,7 @@ int is_palindrome(listint_t **head)
 	}
 	lop_lenght = lenght;
 	if (lenght % 2 != 0)
-	{
 		lop_lenght = lenght / 2;
-	}
 	for (idx = 0; idx < lop_lenght; idx++)
 	{
 		if (arry[idx] != arry[lenght - idx - 1])
