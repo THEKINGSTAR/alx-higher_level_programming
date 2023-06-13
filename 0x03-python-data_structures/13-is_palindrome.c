@@ -78,11 +78,10 @@ int is_palindrome(listint_t **head)
  * An empty list is considered a palindrome
  *
  */
-int odd_is_palindrome(int *array, int lenght)
+int odd_is_palindrome(int *arry, int lenght)
 {
-	int is_pm = 1,	idx = 0, *arry;
+	int is_pm = 1,	idx = 0;
 
-	arry = array;
 	for (idx = 0; idx < lenght / 2; idx++)
 	{
 		if (arry[idx] != arry[lenght - idx - 1])
