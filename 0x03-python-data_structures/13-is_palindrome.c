@@ -1,5 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stddef.h>
 #include "lists.h"
-
 /**
  * is_palindrome - check palindrome function
  *
