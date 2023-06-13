@@ -39,8 +39,7 @@ int is_palindrome(listint_t **head)
 	start = *head;
 	arry = malloc(sizeof(int) * lenght);
 	while (start != NULL)
-	{
-		arry[idx] = start->n;
+	{	arry[idx] = start->n;
 		start = start->next;
 		idx++;
 	}
@@ -49,8 +48,7 @@ int is_palindrome(listint_t **head)
 		/*printf("idx is %d, value at is %d\n",idx, arry[idx]);*/
 		/*printf("compare between: %d && %d\n",arry[idx],arry[lenght - idx - 1]);*/
 		if (arry[idx] != arry[lenght - idx - 1])
-		{
-			is_pm = 0;
+		{	is_pm = 0;
 			free(arry);
 			free(start);
 			return (is_pm);
