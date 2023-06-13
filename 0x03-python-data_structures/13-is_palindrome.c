@@ -31,10 +31,6 @@ int is_palindrome(listint_t **head)
 	{	start = start->next;
 		lenght++;
 	}
-	if (lenght == 1)
-	{	is_pm = 1;
-		return (is_pm);
-	}
 	start = *head;
 	arry = malloc(sizeof(int) * lenght);
 	while (start != NULL)
@@ -44,7 +40,15 @@ int is_palindrome(listint_t **head)
 	}
 	lop_lenght = lenght;
 	if (lenght % 2 != 0)
+	{
+		if (lenght == 1)
+		{
+			is_pm = 1;
+			free(arry);
+			return (is_pm);
+		}
 		lop_lenght = lenght / 2;
+	}
 	for (idx = 0; idx < lop_lenght; idx++)
 	{
 		if (arry[idx] != arry[lenght - idx - 1])
@@ -53,7 +57,6 @@ int is_palindrome(listint_t **head)
 			return (is_pm);
 		}
 	}
-	free(start);
 	free(arry);
 	is_pm = 1;
 	return (is_pm);
