@@ -20,7 +20,6 @@ listint_t *revrs_list(listint_t **head)
 		current->next = prev;
 		prev = current;
 		current = next;
-		/*printf("reversed val :%d\n", prev->n);*/
 	}
 	*head = prev;
 	return (*head);
@@ -53,41 +52,39 @@ int is_palindrome(listint_t **head)
 	{	is_pm = 1;
 		return (is_pm);
 	}
-	/*printf("get length\n");*/
 	while (start != NULL)
 	{
 		start = start->next;
 		lenght++;
 	}
-	lop_lenght = lenght / 2;
-	if (lenght % 2 != 0)
-	{
-		lop_lenght = lenght / 2;
-	}
+	lop_lenght = lenght;
+        if (lenght % 2 != 0)
+        {
+                lop_lenght = lenght / 2;
+        }
 	start = *head;
-	for (idx = 0; idx < lop_lenght - 1; idx++)
+	for (idx = 0; idx < lop_lenght; idx++)
 	{
 		s_half = start->next;
 		start = start->next;
-		/*printf("IN REV HALF %d\n", s_half->n);*/
 	}
 	s_half = start->next;
 	start = *head;
 	s_half = revrs_list(&s_half);
-	/*printf("Start Comparing\n");*/
-	for (idx = 0; idx < lop_lenght; idx++)
-	{
-		s = start->n;
-		r = s_half->n;
-		/*printf("COMPARE BETWEEN Start Value %d , Reverse Value %d\n", s, r);*/
-		if (s != r)
-		{
-			/*printf("DIFFRENT VALUES ARE Start Value %d , Reverse Value %d\n", s, r);*/
-			return (is_pm);
-		}
-		start = start->next;
-		s_half = s_half->next;
-	}
+	printf("Start Comparing\n");
+        for (idx = 0; idx < lop_lenght; idx++)
+        {
+                s = start->n;
+                r = s_half->n;
+		printf("COMPARE BETWEEN Start Value %d , Reverse Value %d\n", s, r);
+                if (s != r)
+                {
+                        printf("DIFFRENT VALUES ARE Start Value %d , Reverse Value %d\n", s, r);
+                        return (is_pm);
+                }
+                start = start->next;
+                s_half = s_half->next;
+        }
 	is_pm = 1;
 	return (is_pm);
 }
