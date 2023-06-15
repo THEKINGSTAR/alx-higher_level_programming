@@ -10,3 +10,9 @@ matrix = [
 new_matrix = square_matrix_simple(matrix)
 print(new_matrix)
 print(matrix)
+
+matrix = [[7, 2, 5], [2, 5, 6], [7, 5, 10]]
+
+new_matrix = square_matrix_simple(matrix)
+print(new_matrix)
+print(matrix)
