@@ -2,6 +2,7 @@
 def magic_calculation(a, b, c):
     if a < b:
         return (c)
-    for c > b:
+    elif c > b:
         return (a + b)
     return (a * b - c)
+# print(magic_calculation(1, 2, 3))
