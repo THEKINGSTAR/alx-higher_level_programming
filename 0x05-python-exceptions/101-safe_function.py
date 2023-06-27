@@ -7,8 +7,8 @@ def safe_function(fct, *args):
     try:
         result = fct(*args)
         return (result)
-    except IndexError:
-        print("Exception: list index out of range", file=sys.stderr)
-    except ZeroDivisionError:
-        print("Exception: division by zero", file=sys.stderr)
+    except IndexError as i:
+        print(f"Exception: {i}", file=sys.stderr)
+    except ZeroDivisionError as z:
+        print(f"Exception: {z}", file=sys.stderr)
     return (None)
