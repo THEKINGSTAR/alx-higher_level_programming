@@ -12,3 +12,15 @@ my_l_1 = [10, 8, 4, 4]
 my_l_2 = [2, 0, "H", 2, 7]
 result = list_division(my_l_1, my_l_2, max(len(my_l_1), len(my_l_2)))
 print(result)
+
+my_list_1 = [10, "8", 4] 
+my_list_2 = [2, 4, 4] 
+list_length = 3
+result = list_division(my_list_1, my_list_2, list_length)
+print(result)
+
+my_list_1 = [10, "8", 4] 
+my_list_2 = [2, 2] 
+list_length = 3
+result = list_division(my_list_1, my_list_2, list_length)
+print(result)
