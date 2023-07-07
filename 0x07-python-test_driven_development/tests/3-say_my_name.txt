@@ -1,1 +1,19 @@
-#
+>>> my_nm = __import__('3-say_my_name').say_my_name
+>>> my_nm("John", "Smith")
+My name is John Smith
+>>> my_nm("Walter", "White")
+My name is Walter White
+>>> my_nm("Bob")
+My name is Bob 
+>>> try:
+...	my_nm(12, "White")
+... except Exception as e:
+...	print(e)
+...
+first_name must be a string
+>>> try:
+...     my_nm("fantastic", 103)
+... except Exception as e:
+...     print(e)
+...
+last_name must be a string
