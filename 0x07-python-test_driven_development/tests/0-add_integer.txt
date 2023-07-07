@@ -1,0 +1,8 @@
+>>> intadd = __import__("0-add_integer").add_integer
+>>> intadd(2, 3)
+5
+>>> try:
+...     intadd(4, "School")
+... except Exception as e:
+...     print(e)
+...
