@@ -49,3 +49,9 @@ cannot convert float infinity to integer
 ...     print(e)
 ...
 cannot convert float NaN to integer
+>>> try:
+...    print(intadd(1))
+... except Exception as e:
+...    print(e)
+...
+99
