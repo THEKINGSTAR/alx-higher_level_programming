@@ -6,19 +6,19 @@
 ... except Exception as e:
 ...     print(e)
 ...
-a must be an integer or b must be an integer
+b must be an integer
 >>> try:
 ...    print(intadd("School", 5))
 ... except Exception as e:
 ...    print(e)
 ...
-a must be an integer or b must be an integer
+a must be an integer
 >>> try:
 ...    print(intadd(None))
 ... except Exception as e:
 ...    print(e)
 ...
-a must be an integer or b must be an integer
+a must be an integer
 >>> try:
 ...    print(intadd())
 ... except Exception as e:
@@ -36,7 +36,7 @@ add_integer() missing 1 required positional argument: 'a'
 ... except Exception as e:
 ...    print(e)
 ...
-a must be an integer or b must be an integer
+b must be an integer
 >>> try:
 ...     intadd(1, float('inf'))
 ... except Exception as e:
