@@ -5,6 +5,7 @@ This is the "add" module.supplies one function, add_integer().  For example,
 11
 """
 
+
 def add_integer(a, b=98):
     """
     Returns an integer: the addition of a and b
@@ -13,7 +14,7 @@ def add_integer(a, b=98):
     try:
         f = int(a)
         s = int(b)
-    except:
+    except Exception:
         raise TypeError("a must be an integer or b must be an integer")
         return
     sum = int(f + s)
