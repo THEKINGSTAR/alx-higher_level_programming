@@ -11,11 +11,11 @@ def add_integer(a, b=98):
     Returns an integer: the addition of a and b
     """
     sum = 0
-    try:
-        f = int(a)
-        s = int(b)
-    except Exception:
+    if type(a) is not int:
         raise TypeError("a must be an integer or b must be an integer")
         return
-    sum = int(f + s)
+    if type(b) is not int:
+        raise TypeError("a must be an integer or b must be an integer")
+        return
+    sum = int(a + b)
     return (sum)

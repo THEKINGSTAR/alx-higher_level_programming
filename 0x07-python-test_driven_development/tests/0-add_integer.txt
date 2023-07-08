@@ -30,10 +30,10 @@ add_integer() missing 1 required positional argument: 'a'
 ... except Exception as e:
 ...    print(e)
 ...
-4
+a must be an integer or b must be an integer
 >>> try:
 ...    print(intadd(1, "2"))
 ... except Exception as e:
 ...    print(e)
 ...
-3
+a must be an integer or b must be an integer
