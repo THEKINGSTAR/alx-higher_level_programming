@@ -30,10 +30,22 @@ add_integer() missing 1 required positional argument: 'a'
 ... except Exception as e:
 ...    print(e)
 ...
-a must be an integer or b must be an integer
+4
 >>> try:
 ...    print(intadd(1, "2"))
 ... except Exception as e:
 ...    print(e)
 ...
 a must be an integer or b must be an integer
+>>> try:
+...     intadd(1, float('inf'))
+... except Exception as e:
+...     print(e)
+...
+cannot convert float infinity to integer
+>>> try:
+...     intadd(1, float('NaN'))
+... except Exception as e:
+...     print(e)
+...
+cannot convert float NaN to integer
