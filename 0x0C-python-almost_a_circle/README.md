@@ -23,7 +23,7 @@
 >- JSON
 
 
-https://github.com/THEKINGSTAR/alx-higher_level_programming/blob/main/0x0C-python-almost_a_circle/giphy.mp4
+https://github.com/THEKINGSTAR/alx-higher_level_programming/assets/25788408/721a024f-40c2-4fa8-8a0a-e8ff817e2abe
 
 
 ## Resources
