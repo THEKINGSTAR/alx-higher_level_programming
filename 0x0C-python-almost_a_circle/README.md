@@ -6,7 +6,6 @@
 ### The AirBnB project is a big part of the Higher level curriculum. This project will help you be ready for it.
 
 ## In this project, you will review everything about Python:
-
 >- Import
 >- Exceptions
 >- Class
@@ -19,18 +18,16 @@
 >- Read/Write file
 
 ## You will also learn about:
-
 >- ```args``` and ```kwargs```
 >- Serialization/Deserialization
 >- JSON
 
-<video width="320" height="240" controls>
-  <source src="https://github.com/THEKINGSTAR/alx-higher_level_programming/blob/main/0x0C-python-almost_a_circle/giphy.mp4" type="video/mp4">
-</video>
+
+https://github.com/THEKINGSTAR/alx-higher_level_programming/blob/main/0x0C-python-almost_a_circle/giphy.mp4
+
 
 ## Resources
 ## Read or watch:
-
 >- ```args/kwargs```
 >- JSON encoder and decoder
 >- unittest module
