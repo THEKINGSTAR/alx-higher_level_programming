@@ -24,7 +24,9 @@
 >- Serialization/Deserialization
 >- JSON
 
-![alt text](https://github.com/THEKINGSTAR/alx-higher_level_programming/blob/main/0x0C-python-almost_a_circle/giphy.mp4?raw=true)
+<video width="320" height="240" controls>
+  <source src="https://github.com/THEKINGSTAR/alx-higher_level_programming/blob/main/0x0C-python-almost_a_circle/giphy.mp4" type="video/mp4">
+</video>
 
 ## Resources
 ## Read or watch:
