@@ -131,6 +131,58 @@ class Rectangle(Base):
         """
         return (f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}")
         #return ("[Rectangle] ({}) {} {} {} {}".format( self.id, self.x, self.y, self.width ,self.height))
+    
+    #def update(self, *args):
+        """
+        adding the public method def update(self, *args): 
+        that assigns an argument to each attribute:
+        1st argument should be the id attribute
+        2nd argument should be the width attribute
+        3rd argument should be the height attribute
+        4th argument should be the x attribute
+        5th argument should be the y attribute
+        This type of argument is called a “no-keyword argument” - Argument order is super important.
+        """
+        """
+        if len(args) >= 1:
+            self.id = args[0]
+        if len(args) >= 2:
+            self.width = args[1]
+        if len(args) >= 3:
+            self.height = args[2]
+        if len(args) >= 4:
+            self.x = args[3]
+        if len(args) >= 5:
+            self.y = args[4]
+        """
+    def update(self, *args, **kwargs):
+        """
+        **kwargs can be thought of as a double pointer to a dictionary: key/value
+        that assigns an argument to each attribute:
+        1st argument should be the id attribute
+        2nd argument should be the width attribute
+        3rd argument should be the height attribute
+        4th argument should be the x attribute
+        5th argument should be the y attribute
+        """
+        if len(args) >= 1:
+            self.id = args[0]
+            if len(args) >= 2:
+                self.width = args[1]
+            if len(args) >= 3:
+                self.height = args[2]
+            if len(args) >= 4:
+                self.x = args[3]
+            if len(args) >= 5:
+                self.y = args[4]
 
-
-                
+        if kwargs.get("id"):
+            self.id = kwargs["id"]
+        if kwargs.get("width"):
+            self.width = kwargs["width"]
+        if kwargs.get("height"):
+            self.height = kwargs["height"]
+        if kwargs.get("x"):
+            self.x = kwargs["x"]
+        if kwargs.get("y"):
+            self.y = kwargs["y"]
