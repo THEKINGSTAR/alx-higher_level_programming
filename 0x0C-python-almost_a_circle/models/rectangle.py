@@ -31,7 +31,6 @@ class Rectangle(Base):
         self.x = x
         self.y = y
         
-        
     @property
     def width(self):
         return (self.__width)
@@ -121,16 +120,7 @@ class Rectangle(Base):
             for w in range(self.width):
                 print("#", end="")
             print("")
-    
-    def __str__(self):
-        """
-        overriding the
-        __str__ method so that it
-        returns [Rectangle] (<id>) <x>/<y> - <width>/<height>
-        """
-        return (f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}")
-        #return ("[Rectangle] ({}) {} {} {} {}".format( self.id, self.x, self.y, self.width ,self.height))
-    
+      
     #def update(self, *args):
         """
         adding the public method def update(self, *args): 
@@ -185,3 +175,32 @@ class Rectangle(Base):
             self.x = kwargs["x"]
         if kwargs.get("y"):
             self.y = kwargs["y"]
+    
+    def to_dictionary(self):
+        """
+        adding the public method 
+        that returns the dictionary representation of a Rectangle:
+        This dictionary must contain:
+        id
+        width
+        height
+        x
+        y
+        """
+        dict_rep = {}
+        dict_rep["x"] = self.x
+        dict_rep["y"] = self.y
+        dict_rep["id"] = self.id
+        dict_rep["height"] = self.height
+        dict_rep["width"] = self.width
+
+        return (dict_rep)
+    
+    def __str__(self):
+        """
+        overriding the
+        __str__ method so that it
+        returns [Rectangle] (<id>) <x>/<y> - <width>/<height>
+        """
+        return (f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}")
+        #return ("[Rectangle] ({}) {}/{} - {}/{}".format( self.id, self.x, self.y, self.width ,self.height))
