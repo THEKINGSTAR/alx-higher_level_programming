@@ -186,6 +186,7 @@ class Rectangle(Base):
         height
         x
         y
+        {'x': 1, 'y': 9, 'id': 1, 'height': 2, 'width': 10}
         """
         dict_rep = {}
         dict_rep["x"] = self.x
