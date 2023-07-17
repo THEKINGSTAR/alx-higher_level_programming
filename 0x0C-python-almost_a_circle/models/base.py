@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """
 Create a file named models/base.py:
 
@@ -16,7 +17,7 @@ increment __nb_objects
 and
 assign the new value to the public instance attribute id
 
-This class will be the baseâ of all other classes in this project.
+This class will be the baseï¿½ of all other classes in this project.
 
 The goal of it is to manage id attribute in all your future classes
 and
@@ -28,9 +29,18 @@ import json
 
 
 class Base:
+    """
+    The Base model.
+    """
+
     __nb_objects = 0
 
     def __init__(self, id=None):
+        """
+        Class constructor:
+        set the id to 1 if none
+        or increase it by 1
+        """
         if id is not None:
             self.id = id
         else:

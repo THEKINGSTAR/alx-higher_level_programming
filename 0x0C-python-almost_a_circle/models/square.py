@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """
 Write the class Square that inherits from Rectangle:
 
@@ -86,4 +87,10 @@ class Square(Rectangle):
         return (dict_rep)
 
     def __str__(self):
+        """
+        overriding the
+        __str__ method so that it
+        returns [Rectangle] (<id>) <x>/<y> - <width>/<height>
+        {'id': 1, 'x': 2, 'size': 10, 'y': 1}
+        """
         return (f"[Square] ({self.id}) {self.x}/{self.y} - {self.size}")
