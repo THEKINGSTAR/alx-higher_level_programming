@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 from models.base import Base
-import sys
-
 
 """
 THIS MODULE CONTAIN ONE CLASS
@@ -29,14 +27,14 @@ class Rectangle(Base):
         Assign each argument width, height, x and y to the right attribute
         """     
         super().__init__(id)
-        self.widht = width
+        self.width = width
         self.height = height
         self.x = x
         self.y = y
         
         
     @property
-    def width(slef):
+    def width(self):
         return (self.__width)
     @width.setter
     def width(self ,value):
@@ -66,7 +64,7 @@ class Rectangle(Base):
         self.__height = value
     
     @property
-    def x(slef):
+    def x(self):
         """
         Private instance attributes,
         each with its own public getter and setter
@@ -105,7 +103,7 @@ class Rectangle(Base):
         def area(self):
         that returns the area value of the Rectangle instance.
         """
-        return (self.height * self.widht)
+        return (self.height * self.width)
     
     def display(self):
         """
@@ -115,11 +113,18 @@ class Rectangle(Base):
         with the character # - you don’t need to handle x and y here
         """
         for h in range(self.height):
-            for w in range(self.widht):
+            for w in range(self.width):
                 print("#", end="")
             print("")
-
-Update the class Rectangle by overriding the __str__ method so that it returns [Rectangle] (<id>) <x>/<y> - <width>/<height>
+    
+    def __str__(self):
+        """
+        overriding the
+        __str__ method so that it
+        returns [Rectangle] (<id>) <x>/<y> - <width>/<height>
+        """
+        return (f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}")
+        #return ("[Rectangle] ({}) {} {} {} {}".format( self.id, self.x, self.y, self.width ,self.height))
 
 
                 
