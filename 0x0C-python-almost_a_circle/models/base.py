@@ -72,6 +72,8 @@ class Base:
         If json_string is None or empty, return an empty list
         Otherwise, return the list represented by json_string
         """
+        if json_string is None or len(json_string) < 1:
+            return ([])
         dictionary = json.loads(json_string)
         return (dictionary)
 
