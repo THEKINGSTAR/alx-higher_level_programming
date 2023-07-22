@@ -73,10 +73,14 @@ class Base:
         You must use the static method to_json_string (created before)
         You must overwrite the file if it already exists
         """
-
-        get_json = to_json_string(list_objs)
-        with open(cls, 'w', encoding="utf-8") as file:
-            json.dump(get_json, file, ensure_ascii=False)
+        filename = cls.__name__ + ".json"
+        with open(filename, 'w', encoding="utf-8") as file:
+            if list_objs is None:
+                file.write("[]")
+            else:
+                list_of_ditcns = [ob.to_dictionary() for ob in list_objs]
+                get_json = cls.to_json_string(list_of_ditcns)
+                file.write(get_json)
 
     @staticmethod
     def draw(list_rectangles, list_squares):
