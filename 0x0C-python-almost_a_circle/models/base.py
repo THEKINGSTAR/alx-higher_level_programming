@@ -63,6 +63,18 @@ class Base:
         else:
             return (json.dumps(list_dictionaries))
 
+    @staticmethod
+    def from_json_string(json_string):
+        """
+        Update the class Base by adding the static method
+        that returns the list of the JSON string representation json_string:
+        json_string is a string representing a list of dictionaries
+        If json_string is None or empty, return an empty list
+        Otherwise, return the list represented by json_string
+        """
+        dictionary = json.loads(json_string)
+        return (dictionary)
+
     @classmethod
     def save_to_file(cls, list_objs):
         """
