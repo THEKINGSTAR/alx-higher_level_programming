@@ -30,3 +30,21 @@ Printing a sorted list 3 (empty list)
     >>> my_list += []
     >>> my_list.print_sorted()
     []
+
+Check for return of new list
+    >>> my_list = MyList()
+    >>> my_list.append(1)
+    >>> my_list.append(4)
+    >>> my_list.append(2)
+    >>> my_list.append(3)
+    >>> my_list.append(5)
+    >>> my_list.print_sorted()
+    [1, 2, 3, 4, 5]
+    >>> my_list
+    [1, 4, 2, 3, 5]
+
+    Check printable __str__
+    >>> my_list = MyList()
+    >>> my_list.append(123)
+    >>> print(my_list)
+    [123]
