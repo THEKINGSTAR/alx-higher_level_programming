@@ -55,28 +55,16 @@ class Rectangle:
             perimeter = (self.height * 2) + (self.width * 2)
         return (perimeter)
 
-    def repr(self):
-        """
-        should print the rectangle with the character #:
+    def __str__(self):
+        """should print the rectangle with the character #:
         if width or height is equal to 0, return an empty string
         """
         if self.width == 0 or self.height == 0:
             return ("")
         else:
-            for w in self.width:
-                print("#")
-                for h in self.height:
-                    print("#")
-
-    def str(self):
-        """
-        should print the rectangle with the character #:
-        if width or height is equal to 0, return an empty string
-        """
-        if self.width == 0 or self.height == 0:
-            return ("")
-        else:
-            for w in self.width:
-                print("#")
-                for h in self.height:
-                    print("#")
+            str_rep = ""
+            for h in range(self.height):
+                for w in range(self.width):
+                    str_rep += "#"
+                str_rep += "\n"
+            return (str_rep)
