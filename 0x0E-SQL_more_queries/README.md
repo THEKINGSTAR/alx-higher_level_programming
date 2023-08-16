@@ -3,7 +3,7 @@
 ```SQL```
 ```MySQL```
 
-![alt text](https://github.com/THEKINGSTAR/alx-higher_level_programming/tree/main/0x0E-SQL_more_querie/sqlmem.jpg?raw=true)
+![alt text](https://github.com/THEKINGSTAR/alx-higher_level_programming/blob/main/0x0E-SQL_more_querie/sqlmem.jpg?raw=true)
 
 ## ```Resources```
 ## ```Read or watch:```
@@ -141,7 +141,7 @@ id  name
 $
 ```
 
-![alt text](https://github.com/THEKINGSTAR/alx-higher_level_programming/tree/main/0x0E-SQL_more_querie/KDi5d.png?raw=true)
+![alt text](https://github.com/THEKINGSTAR/alx-higher_level_programming/blob/main/0x0E-SQL_more_querie/KDi5d.png?raw=true)
 
 # ```Tasks```
 ## ```0. My privileges! (mandatory)```

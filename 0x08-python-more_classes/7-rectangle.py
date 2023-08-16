@@ -67,9 +67,12 @@ class Rectangle:
             return ("")
         else:
             str_rep = ""
+            symb = Rectangle.print_symbol
+            if isinstance(symb, list):
+                symb = symb[0]
             for h in range(self.height):
                 for w in range(self.width):
-                    str_rep += Rectangle.print_symbol
+                    str_rep += str_rep
                 if h != (self.height - 1):
                     str_rep += "\n"
             return (str_rep)
