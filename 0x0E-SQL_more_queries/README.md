@@ -2,8 +2,7 @@
 # 0x0E. SQL - More queries
 ```SQL```
 ```MySQL```
-
-![alt text](https://github.com/THEKINGSTAR/alx-higher_level_programming/blob/main/0x0E-SQL_more_querie/sqlmem.jpg?raw=true)
+![sqlmem](https://github.com/THEKINGSTAR/alx-higher_level_programming/assets/25788408/bc8720f6-c100-4990-a099-ff249f390c1f)
 
 ## ```Resources```
 ## ```Read or watch:```
@@ -141,7 +140,7 @@ id  name
 $
 ```
 
-![alt text](https://github.com/THEKINGSTAR/alx-higher_level_programming/blob/main/0x0E-SQL_more_querie/KDi5d.png?raw=true)
+![KDi5d](https://github.com/THEKINGSTAR/alx-higher_level_programming/assets/25788408/23f95fb2-9660-47e9-9fec-440a36479254)
 
 # ```Tasks```
 ## ```0. My privileges! (mandatory)```
