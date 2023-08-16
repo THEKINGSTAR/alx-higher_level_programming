@@ -1,6 +1,6 @@
 
 # 0x0E. SQL - More queries
-```SQL``` ```MySQL```
+## ```SQL``` ```MySQL```
 
 ![sqlmem](https://github.com/THEKINGSTAR/alx-higher_level_programming/assets/25788408/bc8720f6-c100-4990-a099-ff249f390c1f)
 
