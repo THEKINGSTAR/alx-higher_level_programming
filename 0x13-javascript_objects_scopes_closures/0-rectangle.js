@@ -1,5 +1,9 @@
 #!/usr/bin/node
+
 class Rectangle {
- constructor() {
+  constructor () {
+    // This is an empty constructor.
   }
 }
+
+module.exports = Rectangle;

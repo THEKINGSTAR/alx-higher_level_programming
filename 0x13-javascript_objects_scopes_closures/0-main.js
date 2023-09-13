@@ -9,5 +9,5 @@ console.log(r1.constructor);
  * guillaume@ubuntu:~/0x13$ ./0-main.js
  * Rectangle {}
  * [Class: Rectangle]
- * guillaume@ubuntu:~/0x13$ 
+ * guillaume@ubuntu:~/0x13$
  */
