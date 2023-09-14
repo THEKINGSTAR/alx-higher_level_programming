@@ -3,11 +3,8 @@
 const nfound = 'No argument';
 const args = process.argv;
 
-let i = 2;
-while (args[i] !== undefined) {
-  console.log(args[i]);
-  i++;
-}
-if (args[2] === undefined) {
+if (args[2] !== undefined) {
+  console.log(args[2]);
+} else if (args[2] === undefined) {
   console.log(nfound);
 }
