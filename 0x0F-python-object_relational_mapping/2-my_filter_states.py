@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-MODULE TO  lists all states from the database hbtn_0e_0_usa:
+SCRIPT Takes in an argument and displays all values
+in the states table of hbtn_0e_0_usa where name matches the argument.
 """
 if __name__ == "__main__":
     import MySQLdb
@@ -10,6 +11,7 @@ if __name__ == "__main__":
     mysql_password = sys.argv[2]
     database_name = sys.argv[3]
     state_name_searched = sys.argv[4]
+
     db = MySQLdb.connect(host="localhost", user=mysql_username,
                          port=3307, password=mysql_password,
                          database=database_name)
@@ -17,10 +19,10 @@ if __name__ == "__main__":
     cur = db.cursor()
 
     query = """SELECT *  FROM states
-            WHERE name = %s
-            ORDER BY states.id ASC;"""
+            WHERE name = '{}'
+            ORDER BY states.id ASC;""".format(state_name_searched)
 
-    cur.execute(query, (state_name_searched,))
+    cur.execute(query)
 
     results = cur.fetchall()
 
