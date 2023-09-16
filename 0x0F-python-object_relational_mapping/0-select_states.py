@@ -18,7 +18,7 @@ if __name__ == "main":
     cur = db.cursor()
 
     query = """SELECT * FROM states
-            ORDER BY states.id ASC"""
+            ORDER BY states.id ASC;"""
 
     cur.execute(query)
 
