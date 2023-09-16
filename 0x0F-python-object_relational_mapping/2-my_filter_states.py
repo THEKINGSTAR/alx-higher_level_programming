@@ -13,13 +13,13 @@ if __name__ == "__main__":
     state_name_searched = sys.argv[4]
 
     db = MySQLdb.connect(host="localhost", user=mysql_username,
-                         port=3307, password=mysql_password,
+                         port=3306, password=mysql_password,
                          database=database_name)
 
     cur = db.cursor()
 
     query = """SELECT *  FROM states
-            WHERE name = '{}'
+            WHERE name LIKE BINARY '{}'
             ORDER BY states.id ASC;""".format(state_name_searched)
 
     cur.execute(query)
