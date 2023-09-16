@@ -23,7 +23,7 @@ if __name__ == "__main__":
             FROM cities
             LEFT JOIN states
             ON cities.state_id = states.id
-            WHERE states.name = %s
+            WHERE states.name LIKE BINARY %s
             ORDER BY cities.id ASC;"""
 
     cur.execute(query, (state_name,))
@@ -33,5 +33,6 @@ if __name__ == "__main__":
     for row in results:
         print(row[0], end=' ')
     print('')
+
     cur.close()
     db.close()
