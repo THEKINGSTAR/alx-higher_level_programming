@@ -3,6 +3,7 @@
 MODULE TO  lists all states from the database hbtn_0e_0_usa:
 """
 if __name__ == "main":
+
     import MySQLdb
     import sys
 
@@ -11,19 +12,20 @@ if __name__ == "main":
     database_name = sys.argv[3]
 
     db = MySQLdb.connect(host="localhost", user=mysql_username,
-                            port=3307, password=mysql_password,
-                            database=database_name)
+                         port=3307, password=mysql_password,
+                         database=database_name)
 
     cur = db.cursor()
 
-    query = """SELECT name FROM states
+    query = """SELECT * FROM states
             ORDER BY states.id ASC"""
+
     cur.execute(query)
 
     results = cur.fetchall()
 
-    for idx, row in enumerate(results, start=1):
-        print("({}, '{}')".format(idx, row[0]))
+    for row in results:
+        print(row)
 
     cur.close()
     db.close()
