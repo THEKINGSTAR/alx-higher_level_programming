@@ -25,6 +25,7 @@ def lists_all_State(mysql_username, mysql_password, database_name):
 
     session = Session(engine)
 
+    """
     states = session.query(State).order_by(State.id).all()
     if (states is None):
         print("Nothing ")
@@ -32,6 +33,12 @@ def lists_all_State(mysql_username, mysql_password, database_name):
         for state in states:
             print(f"{state.id}: {state.name}")
             return
+    """
+    first = session.query(State).order_by(State.id).first()
+    if first:
+        print("{}: {}".format(first.id, first.name))
+    else:
+        print("Nothing")
 
     session.close()
 
