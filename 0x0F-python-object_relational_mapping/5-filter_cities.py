@@ -30,9 +30,7 @@ if __name__ == "__main__":
 
     results = cur.fetchall()
 
-    for row in results:
-        print(row[0], end=' ')
-    print('')
+    print(", ".join([results[0] for results in results]))
 
     cur.close()
     db.close()
