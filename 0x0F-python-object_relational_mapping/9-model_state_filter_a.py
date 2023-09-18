@@ -26,7 +26,7 @@ def lists_a_State(mysql_username, mysql_password, database_name):
 
     session = Session(engine)
     contain = session.query(State).filter(State.name.like('%a%'))\
-             .order_by(State.id).all()
+                                  .order_by(State.id).all()
 
     for state in contain:
         print(f"{state.id}: {state.name}")
