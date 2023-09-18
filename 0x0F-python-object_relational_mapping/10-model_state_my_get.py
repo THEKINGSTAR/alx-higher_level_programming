@@ -12,7 +12,7 @@ from model_state import Base, State
 from sqlalchemy.orm import Session
 
 
-def lists_name_State(mysql_username, mysql_password, database_name, name_search):
+def lists_name_State(mysql_username, mysql_passwd, database_name, name_search):
     """
     prints the State object with the 'name'
     passed as argument from the database hbtn_0e_6_usa
@@ -20,14 +20,13 @@ def lists_name_State(mysql_username, mysql_password, database_name, name_search)
     """
 
     db_url = "mysql://{}:{}@localhost:3306/{}"\
-             .format(mysql_username, mysql_password, database_name)
+             .format(mysql_username, mysql_passwd, database_name)
     engine = create_engine(db_url)
 
     Base.metadata.create_all(engine)
 
     session = Session(engine)
-    state = session.query(State).filter(State.name==name_search)\
-             .first()
+    state = session.query(State).filter(State.name == name_search).first()
     if state:
         print(state.id)
     else:
@@ -42,8 +41,8 @@ if __name__ == "__main__":
     """
 
     mysql_username = sys.argv[1]
-    mysql_password = sys.argv[2]
+    mysql_passwd = sys.argv[2]
     database_name = sys.argv[3]
     name_search = sys.argv[4]
 
-    lists_name_State(mysql_username, mysql_password, database_name, name_search)
+    lists_name_State(mysql_username, mysql_passwd, database_name, name_search)
