@@ -13,7 +13,7 @@ from sqlalchemy.orm import Session
 
 def lists_all_State(mysql_username, mysql_password, database_name):
     """
-    lists all State objects from the database hbtn_0e_6_usa
+    lists the first State objects from the database hbtn_0e_6_usa
     Results must be sorted in ascending order by states.id
     """
 
