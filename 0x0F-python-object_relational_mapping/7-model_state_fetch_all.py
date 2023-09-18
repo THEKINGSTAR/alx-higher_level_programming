@@ -5,13 +5,10 @@ Script that lists all State objects from the database hbtn_0e_6_us
 """
 
 import sys
-from sqlalchemy.ext.declarative import declarative_bas
 from sqlalchemy.orm import column_property
-from sqlalchemy import select, fun
-from sqlalchemy import Column, Intr, String, ForeignKey
 from sqlalchemy import create_engine
 from model_state import Base, State
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import Session
 
 
 def lists_all_State(mysql_username, mysql_password, database_name):
@@ -24,8 +21,9 @@ def lists_all_State(mysql_username, mysql_password, database_name):
              .format(mysql_username, mysql_password, database_name)
     engine = create_engine(db_url)
 
-    Session = sessionmaker(bind=engine)
-    session = Session()
+    Base.metadata.create_all(engine)
+
+    session = Session(engine)
 
     states = session.query(State).order_by(State.id).all()
     for state in states:
