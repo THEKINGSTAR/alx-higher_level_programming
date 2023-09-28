@@ -20,6 +20,7 @@ Note: there may be more than one peak in the list
 
 
 def find_peak(list_of_integers):
+    """ FIND PEAK FUNCTION """
     if (len(list_of_integers) <= 0):
         return (None)
     m = 0
