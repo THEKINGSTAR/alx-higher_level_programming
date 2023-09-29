@@ -16,13 +16,11 @@ if __name__ == "__main__":
     import requests
     import sys
 
-    try:
-        args = sys.argv
-        u_r_l = args[1]
-        response = requests.get(url=u_r_l)
-        er = response.status_code
-        if er >= 400:
-            print("Error code: {}".format(er))
-
-    except requests.RequestException as e:
-        print("Error code: {}".format(e))
+    args = sys.argv
+    u_r_l = args[1]
+    response = requests.get(url=u_r_l)
+    er = response.status_code
+    if er >= 400:
+        print("Error code: {}".format(er))
+    else:
+        print(response.text)
