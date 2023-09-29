@@ -12,6 +12,10 @@ if __name__ == "__main__":
     import requests
     import sys
 
-    response = requests.get(sys.argv[1])
-    answer = response.headers['X-Request-Id']
-    print(answer)
+    try:
+        response = requests.get(sys.argv[1])
+        answer = response.headers['X-Request-Id']
+        print(answer)
+
+    except Exception as e:
+        print(e)
