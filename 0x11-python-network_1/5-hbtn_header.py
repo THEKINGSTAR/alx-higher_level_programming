@@ -12,7 +12,7 @@ if __name__ == "__main__":
     import requests
     import sys
 
-    sys.argv[1]
+    args = sys.argv[1]
     response = requests.get(args[1])
     answer = response.headers['X-Request-Id']
     print(answer)
