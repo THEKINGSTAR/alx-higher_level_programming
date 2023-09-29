@@ -18,23 +18,34 @@ your algorithm: O(log(n)), O(n), O(nlog(n)) or O(n2)
 Note: there may be more than one peak in the list
 """
 
+"""
+def find_peak(list_of_integers):
+    # FIND PEAK FUNCTION
+    ln = len(list_of_integers)
+    lst = list_of_integers
+    if (lst[ln / 2] < lst[ln / 2 - 1]):
+        lst = [lst[0] : lst[ln / 2 - 1]]
+    else if (lst[ln / 2] < lst[ln / 2 + 1]):
+        lst = [lst[ln / 2]: lst[ln / 2 + 1]]
+    else:
+        return (lst[0])
+"""
+
 
 def find_peak(list_of_integers):
-    """ FIND PEAK FUNCTION """
-    if (len(list_of_integers) <= 0):
-        return (None)
-    m = 0
-    c = 0
-    s = len(list_of_integers)
-    while (c < s - 1):
-        p = list_of_integers[c]
-        r = list_of_integers[c + 1]
-        if (c != 0):
-            f = list_of_integers[c - 1]
-        else:
-            f = None
+    """Find a peak element in a list of integers."""
+    if not list_of_integers:
+        return None
 
-        if (f is not None and r is not None and m < p):
-            m = p
-        c += 1
-    return (m)
+    low = 0
+    high = len(list_of_integers) - 1
+
+    while low < high:
+        mid = (low + high) // 2
+
+        if list_of_integers[mid] < list_of_integers[mid + 1]:
+            low = mid + 1
+        else:
+            high = mid
+
+    return (list_of_integers[low])
