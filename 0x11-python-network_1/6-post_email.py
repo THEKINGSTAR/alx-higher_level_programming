@@ -4,17 +4,20 @@
 
 if __name__ == "__main__":
     """
-    sends a request to the URL
-    and
-    displays the value of the variable X-Request-Id in the response header
+    sends a POST request to the passed URL
+    with the email as a parameter
+    and finally displays the body of the response.
     """
 
     import requests
     import sys
 
     try:
+        args = sys.argv
+        u_r_l = args[1]
+        email = args[2]
         response = requests.get(sys.argv[1])
-        answer = response.headers.get("X-Request-Id")
+        answer = response.headers['X-Request-Id']
         print(answer)
 
     except Exception as e:
