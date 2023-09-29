@@ -23,7 +23,7 @@ try:
     u_r_l = args[1]
     email = args[2]
     data = urllib.parse.urlencode({'email': email}).encode('utf-8')
-    with urllib.request.urlopen(url, data=data) as response:
+    with urllib.request.urlopen(url=u_r_l, data=data) as response:
         response_body = response.read().decode('utf-8')
         print(response_body)
 
