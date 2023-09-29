@@ -19,11 +19,10 @@ import urllib.parse
 import sys
 
 
-args = sys.argv
-
 try:
-    u_r_l = args[1]
-    with urllib.request.urlopen(u_r_l) as response:
+    args = sys.argv
+    
+    with urllib.request.urlopen(args[1]) as response:
         response_body = response.read().decode('utf-8')
         print(response_body)
 
