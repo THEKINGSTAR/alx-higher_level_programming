@@ -13,6 +13,15 @@ the class must be updated to green ; and the reverse.
 -You must use the JQuery API
 */
 
-$('DIV#red_header').click(function () {
-  $('header').addClass('red');
+$(document).ready(function () {
+  $('DIV#toggle_header').click(function () {
+    const header = $('header');
+    if (header.hasClass('red')) {
+      header.removeClass('red');
+      header.addClass('green');
+    } else {
+      header.removeClass('green');
+      header.addClass('red');
+    }
+  });
 });
