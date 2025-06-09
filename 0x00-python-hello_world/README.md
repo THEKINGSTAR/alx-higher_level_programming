@@ -2,7 +2,11 @@
 ## Concepts
 ## For this project, we expect you to look at this concept:
 
+<div align="center">
+
 ![alt text](https://github.com/THEKINGSTAR/alx-higher_level_programming/blob/main/python.jpg?raw=true)
+
+</div>
 
 # Python programming
 
@@ -11,12 +15,11 @@
 Welcome to the Python world!
 
 ### The first projects are more "C-oriented" - no tricks, no funky syntax - simple!
->- # If you've already played with Python, don't worry, fun things will come.
->- # You'll soon find that with Python (and the majority of higher level languages), there are ten different ways to do the same thing. Some tasks will expect only one implementation, while other tasks will have multiple possible implementations.
->- # Like C, Python also has a linter / style guide like Betty, called PEP8, also now known as PyCode.
->- # Enjoy!
-
->- # - Guillaume
+>-  If you've already played with Python, don't worry, fun things will come.
+>-  You'll soon find that with Python (and the majority of higher level languages), there are ten different ways to do the same thing. Some tasks will expect only one implementation, while other tasks will have multiple possible implementations.
+>-  Like C, Python also has a linter / style guide like Betty, called PEP8, also now known as PyCode.
+>-  Enjoy!
+>- - Guillaume
 
 # Resources
 ## Read or watch:
@@ -29,6 +32,7 @@ Welcome to the Python world!
 >- Learn to Program
 >- Pycodestyle – Style Guide for Python Code
 >- Learning Objectives
+
 >- ## At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
 ## General
@@ -50,17 +54,18 @@ Welcome to the Python world!
 >- Any form of plagiarism is strictly forbidden and will result in removal from the program.
 
 ## Requirements
->- Python Scripts
->- Allowed editors: vi, vim, emacs
+### **Python Scripts**
+>- Allowed editors: ```vi```, ```vim```, ```emacs```
 >- All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
 >- All your files should end with a new line
->- The first line of all your files should be exactly #!/usr/bin/python3
->- A README.md file at the root of the repo, containing a description of the repository
+>- The first line of all your files should be exactly ```#!/usr/bin/python3```
+>- A README.md file at the root of the repo, containing a description of the repository 
 >- A README.md file, at the root of the folder of this project, is mandatory
 >- Your code should use the pycodestyle (version 2.8.*)
 >- All your files must be executable
 >- The length of your files will be tested using wc
->- Shell Scripts
+
+### **Shell Scripts**
 >- Allowed editors: vi, vim, emacs
 >- All your scripts will be tested on Ubuntu 20.04 LTS
 >- All your scripts should be exactly two lines long (wc -l file should print 2)
@@ -104,6 +109,7 @@ All your header files should be include guarded
 Namespaces are one honking great idea -- let's do more of those!
 
 # Pycodestyle
+
 >- ### Pycodestyle is now the new standard of Python style code
 
 
@@ -111,12 +117,12 @@ Namespaces are one honking great idea -- let's do more of those!
 
 
 # Tasks
-## 0. Run Python file
-mandatory
+## ```0. Run Python file (mandatory)```
 Write a Shell script that runs a Python script.
 
 The Python file name will be saved in the environment variable $PYFILE
-```c
+
+```sh
 guillaume@ubuntu:~/py/0x00$ cat main.py 
 #!/usr/bin/python3
 print("Best School")
@@ -126,47 +132,46 @@ guillaume@ubuntu:~/py/0x00$ ./0-run
 Best School
 guillaume@ubuntu:~/py/0x00$ 
 ```
-Repo:
+## **```Repo:```**
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x00-python-hello_world
-File: 0-run
+>- **GitHub repository:** ``` alx-higher_level_programming```
+>- **Directory:** ``` 0x00-python-hello_world```
+>- **File:** ``` 0-run```
   
-## 1. Run inline
-mandatory
+## ```1. Run inline (mandatory)```
 Write a Shell script that runs Python code.
 
 The Python code will be saved in the environment variable $PYCODE
-```c
+
+```sh
 guillaume@ubuntu:~/py/0x00$ export PYCODE='print(f"Best School: {88+10}")'
 guillaume@ubuntu:~/py/0x00$ ./1-run_inline 
 Best School: 98
 guillaume@ubuntu:~/py/0x00$ 
 ```
-## Repo:
+## **```Repo:```**
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x00-python-hello_world
-File: 1-run_inline
+>- **GitHub repository:** ``` alx-higher_level_programming```
+>- **Directory:** ``` 0x00-python-hello_world```
+>- **File:** ``` 1-run_inline```
   
-## 2. Hello, print
-mandatory
+## ```2. Hello, print (mandatory)```
 Write a Python script that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
 
 Use the function print
-```c
+
+```sh
 guillaume@ubuntu:~/py/0x00$ ./2-print.py 
 "Programming is like building a multilingual puzzle
 guillaume@ubuntu:~/py/0x00$
 ```
-## Repo:
+## **```Repo:```**
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x00-python-hello_world
-File: 2-print.py
+>- **GitHub repository:** ``` alx-higher_level_programming```
+>- **Directory:** ``` 0x00-python-hello_world```
+>- **File:** ``` 2-print.py```
 
-## 3. Print integer
-mandatory
+## ```3. Print integer (mandatory)```
 Complete this source code in order to print the integer stored in the variable number, followed by Battery street, followed by a new line.
 
 You can find the source code here
@@ -176,19 +181,22 @@ followed by a new line
 You are not allowed to cast the variable number into a string
 Your code must be 3 lines long
 You have to use f-strings tips
-```c
+
+```sh
 guillaume@ubuntu:~/py/0x00$ ./3-print_number.py
 98 Battery street
 guillaume@ubuntu:~/py/0x00$ 
 ```
-## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x00-python-hello_world
-File: 3-print_number.py
+## **```Repo:```**
+
+>- **GitHub repository:** ``` alx-higher_level_programming```
+>- **Directory:** ``` 0x00-python-hello_world```
+>- **File:** ``` 3-print_number.py```
+
   
-## 4. Print float
-mandatory
+## ```4. Print float (mandatory)```
+
 Complete the source code in order to print the float stored in the variable number with a precision of 2 digits.
 
 You can find the source code here
@@ -197,19 +205,20 @@ Float:, followed by the float with only 2 digits
 followed by a new line
 You are not allowed to cast number to string
 You have to use f-strings
-```c
+
+```sh
 guillaume@ubuntu:~/py/0x00$ ./4-print_float.py
 Float: 3.14
 guillaume@ubuntu:~/py/0x00$ 
 ```
-## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x00-python-hello_world
-File: 4-print_float.py
+## **```Repo:```**
+
+>- **GitHub repository:** ``` alx-higher_level_programming```
+>- **Directory:** ``` 0x00-python-hello_world```
+>- **File:** ``` 4-print_float.py```
   
-## 5. Print string
-mandatory
+## ```5. Print string (mandatory)```
 Complete this source code in order to print 3 times a string stored in the variable str, followed by its first 9 characters.
 
 You can find the source code here
@@ -220,41 +229,43 @@ followed by the 9 first characters of str
 followed by a new line
 You are not allowed to use any loops or conditional statement
 Your program should be maximum 5 lines long
-```c
+
+```sh
 guillaume@ubuntu:~/py/0x00$ ./5-print_string.py 
 Holberton SchoolHolberton SchoolHolberton School
 Holberton
 guillaume@ubuntu:~/py/0x00$ 
 ```
-## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x00-python-hello_world
-File: 5-print_string.py
+## **```Repo:```**
+
+>- **GitHub repository:** ``` alx-higher_level_programming```
+>- **Directory:** ``` 0x00-python-hello_world```
+>- **File:** ``` 5-print_string.py```
   
-6. Play with strings
-mandatory
+## ```6. Play with strings (mandatory)```
 Complete this source code to print Welcome to Holberton School!
 
 You can find the source code here
 You are not allowed to use any loops or conditional statements.
 You have to use the variables str1 and str2 in your new line of code
 Your program should be exactly 5 lines long
-```
+
+```sh
 guillaume@ubuntu:~/py/0x00$ ./6-concat.py
 Welcome to Holberton School!
 guillaume@ubuntu:~/py/0x00$ wc -l 6-concat.py
 5 6-concat.py
 guillaume@ubuntu:~/py/0x00$ 
 ```
-## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x00-python-hello_world
-File: 6-concat.py
+## **```Repo:```**
+
+>- **GitHub repository:** ``` alx-higher_level_programming```
+>- **Directory:** ``` 0x00-python-hello_world```
+>- **File:** ``` 6-concat.py```
   
-## 7. Copy - Cut - Paste
-mandatory
+## ```7. Copy - Cut - Paste (mandatory)```
 Complete this source code
 
 You can find the source code here
@@ -263,7 +274,8 @@ Your program should be exactly 8 lines long
 word_first_3 should contain the first 3 letters of the variable word
 word_last_2 should contain the last 2 letters of the variable word
 middle_word should contain the value of the variable word without the first and last letters
-```c
+
+```sh
 guillaume@ubuntu:~/py/0x00$ ./7-edges.py
 First 3 letters: Hol
 Last 2 letters: on
@@ -272,14 +284,14 @@ guillaume@ubuntu:~/py/0x00$ wc -l 7-edges.py
 8 7-edges.py
 guillaume@ubuntu:~/py/0x00$ 
 ```
-## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x00-python-hello_world
-File: 7-edges.py
+## **```Repo:```**
+
+>- **GitHub repository:** ``` alx-higher_level_programming```
+>- **Directory:** ``` 0x00-python-hello_world```
+>- **File:** ``` 7-edges.py```
   
-## 8. Create a new sentence
-mandatory
+## ```8. Create a new sentence (mandatory)```
 Complete this source code to print object-oriented programming with Python, followed by a new line.
 
 You can find the source code here
@@ -287,26 +299,31 @@ You are not allowed to use any loops or conditional statements
 Your program should be exactly 5 lines long
 You are not allowed to create new variables
 You are not allowed to use string literals
-```c
+
+```sh
 guillaume@ubuntu:~/py/0x00$ ./8-concat_edges.py
 object-oriented programming with Python
 guillaume@ubuntu:~/py/0x00$ wc -l 8-concat_edges.py
 5 8-concat_edges.py
 guillaume@ubuntu:~/py/0x00$ 
 ```
-## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x00-python-hello_world
-File: 8-concat_edges.py
+## **```Repo:```**
+
+>- **GitHub repository:** ``` alx-higher_level_programming```
+>- **Directory:** ``` 0x00-python-hello_world```
+>- **File:** ``` 8-concat_edges.py```
+
   
-9. Easter Egg
-mandatory
-Write a Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.
+## ```9.Easter Egg (mandatory)```
 
-Your script should be maximum 98 characters long (please check with wc -m 9-easter_egg.py)
+* Write a Python script that prints ```“The Zen of Python”```, by TimPeters, followed by a new line.
+* Your script should be ```maximum 98 characters long``` (please check with ```wc -m 9-easter_egg.py```)
 
-```c guillaume@ubuntu:~/py/0x00$ ./9-easter_egg.py
+
+```shell
+
+guillaume@ubuntu:~/py/0x00$ ./9-easter_egg.psh
 The Zen of Python, by Tim Peters
 
 Beautiful is better than ugly.
@@ -328,29 +345,37 @@ Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
+
 guillaume@ubuntu:~/py/0x00$
+
 ```
-## Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x00-python-hello_world
-File: 9-easter_egg.py
-  
-## 10. Linked list cycle
-mandatory
-Technical interview preparation:
+## **```Repo:```**
 
-You are not allowed to google anything
-Whiteboard first
+>- **GitHub repository:** ``` alx-higher_level_programming```
+>- **Directory:** ``` 0x00-python-hello_world```
+>- **File:** ``` 9-easter_egg.py```
+
+
+## ```10. Linked list cycle (mandatory)```
+
+**Technical interview preparation:**
+
+### **You are not allowed to google anything**
+
+**Whiteboard first**
+
 This task and all future technical interview prep tasks will include checks for the efficiency of your solution, i.e. is your solution’s runtime fast enough, does your solution require extra memory usage / mallocs, etc.
+
 Write a function in C that checks if a singly linked list has a cycle in it.
 
-Prototype: int check_cycle(listint_t *list);
-Return: 0 if there is no cycle, 1 if there is a cycle
-Requirements:
 
-Only these functions are allowed: write, printf, putchar, puts, malloc, free
-```c
+>- ```Prototype```: ```int check_cycle(listint_t *list);```
+>- ```Return```: 0 if there is no cycle, 1 if there is a cycle
+>- ```Requirements```:
+ Only these functions are allowed: ```write```, ```printf```, ```putchar```, ```puts```, ```malloc```, ```free```
+
+```sh
 carrie@ubuntu:~/0x00$ cat lists.h
 #ifndef LISTS_H
 #define LISTS_H
@@ -510,8 +535,8 @@ Linked list has a cycle
 carrie@ubuntu:~/0x00$
 Solving a problem is already a big win! but finding the best and optimal way to solve it, it’s way better! Think about the most optimal / fastest way to do it.
 ```
-## Repo:
+## **```Repo:```**
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x00-python-hello_world
-File: 10-check_cycle.c, lists.h
+>- **GitHub repository:** ``` alx-higher_level_programming```
+>- **Directory:** ``` 0x00-python-hello_world```
+>- **File:** ``` 10-check_cycle.c, lists.h```
