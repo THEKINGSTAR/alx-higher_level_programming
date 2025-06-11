@@ -10,15 +10,26 @@
 # ```Python programming```
 
 
-## Author’s disclaimer
-Welcome to the Python world!
 
-### The first projects are more "```C-oriented```" - no tricks, no funky syntax - simple!
->-  If you've already played with ```Python```, don't worry, fun things will come.
->-  You'll soon find that with Python (and the majority of higher level languages), there are ten different ways to do the same thing. Some tasks will expect only one implementation, while other tasks will have multiple possible implementations.
->- Like ```C```, ```Python``` also has a linter / style guide like Betty, called ```PEP8```, also now known as ```PyCode```.
->- Enjoy!
->- Guillaume
+
+<div align="center">
+
+## **Author’s disclaimer**
+
+### Welcome to the Python world!
+
+</div>
+
+
+### If you've already played with ```Python```, don't worry, fun things will come.
+### You'll soon find that with Python (and the majority of higher level languages), there are ten different ways to do the same thing. Some tasks will expect only one implementation, while other tasks will have multiple possible implementations.
+#### Like ```C```, ```Python``` also has a linter / style guide like Betty, called ```PEP8```, also now known as ```PyCode```.
+
+Enjoy!
+
+Guillaume
+
+
 
 # ```Resources```
 ## ```Read or watch:```
@@ -26,12 +37,14 @@ Welcome to the Python world!
 >- The Python tutorial (only the first three chapters below)
 >- Whetting Your Appetite
 >- Using the Python Interpreter
->- An Informal Introduction to Python (Read up until “3.1.2. Strings” included)
+>- An Informal Introduction to Python
 >- How To Use String Formatters in ```Python3```
 >- Learn to Program
 >- ```Pycodestyle``` – Style Guide for Python Code
->- Learning Objectives
->- ## At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+
+
+# ***Learning Objectives***
+
 
 ## ```General```
 >- Why Python programming is awesome
@@ -72,17 +85,6 @@ Welcome to the Python world!
 >- The first line of all your files should be exactly ```#!/bin/bash```
 >- All your files must be executable
 
-## ```C Scripts```
->- Allowed editors: ```vi```, ```vim```, ```emacs```
->- All your files will be compiled on``` Ubuntu 20.04 LTS``` using gcc, using the options ```-Wall -Werror -Wextra -pedantic -std=gnu89```
->- All your files should end with a new line
->- Your code should use the Betty style. It will be checked using ```betty-style.pl``` and ```betty-doc.pl```
->- You are not allowed to use global variables
->- No more than 5 functions per file
->- In the following examples, the ```main.c``` files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own ```main.c``` files at compilation. Our ```main.c``` files might be different from the one shown in the examples
-The prototypes of all your functions should be included in your header file called ```lists.h```
->- Don’t forget to push your header file
->- All your header files should be include guarded
 
 # ```More Info```
 
@@ -139,4 +141,8 @@ Namespaces are one honking great idea -- let's do more of those!
 * [0x15-javascript-web_jquery](./0x15-javascript-web_jquery)
 
 ---
+<div align="center">
+
 ### ```Copyright © 2024 ALX, All rights reserved.```
+
+</div>
