@@ -1,7 +1,7 @@
-# 0x03. Python - Data Structures: Lists, Tuples
-## Python
+# **`0x03. Python - Data Structures: Lists, Tuples`**
+## `Python`
 
-## Resources
+## **`Resources`**
 ### Read or watch:
 
 >- 3.1.3. Lists
@@ -11,6 +11,7 @@
 >- At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
 ## General
+
 >- Why Python programming is awesome
 >- What are lists and how to use them
 >- What are the differences and similarities between strings and lists
@@ -25,45 +26,50 @@
 >- What is the del statement and how to use it
 
 ## Copyright - Plagiarism
->- You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
->- You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
->- You are not allowed to publish any content of this project.
->- Any form of plagiarism is strictly forbidden and will result in removal from the program.
+- You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
+- You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
+- You are not allowed to publish any content of this project.
+- Any form of plagiarism is strictly forbidden and will result in removal from the program.
 
-## Requirements
-## Python Scripts
->- Allowed editors: vi, vim, emacs
->- All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
->- All your files should end with a new line
->- The first line of all your files should be exactly #!/usr/bin/python3
->- A README.md file, at the root of the folder of the project, is mandatory
->- Your code should use the pycodestyle (version 2.8.*)
->- All your files must be executable
->- The length of your files will be tested using wc
-## C
->- Allowed editors: vi, vim, emacs
->- All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
->- All your files should end with a new line
->- Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
->- You are not allowed to use global variables
->- No more than 5 functions per file
->- In the following examples, the main.c files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own main.c files at compilation. Our main.c files might be different from the one shown in the examples
->- The prototypes of all your functions should be included in your header file called lists.h
->- Don’t forget to push your header file
->- All your header files should be include guarded
+## **`Requirements`**
 
-# Tasks
-## 0. Print a list of integers (mandatory)
+## **`Python Scripts`**
+- Allowed editors: `vi`, `vim`, `emacs`
+- All your files will be interpreted/compiled on `Ubuntu 20.04 LTS` using `python3` (version 3.8.5)
+- All your files should end with a new line
+- The first line of all your files should be exactly `#!/usr/bin/python3`
+- A `README.md` file, at the root of the folder of the project, is mandatory
+- Your code should use the `pycodestyle` (version 2.8.*)
+- All your files must be executable
+- The length of your files will be tested using `wc`
+
+## **`C`**
+- Allowed editors: `vi`, `vim`, `emacs`
+- All your files will be interpreted/compiled on `Ubuntu 20.04 LTS` using `python3` (version 3.8.5)
+- All your files should end with a new line
+- Your code should use the Betty style. It will be checked using `betty-style.pl` and `betty-doc.pl`
+- You are not allowed to use global variables
+- No more than 5 functions per file
+- In the following examples, the `main.c` files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own `main.c` files at compilation. Our `main.c` files might be different from the one shown in the examples
+- The prototypes of all your functions should be included in your header file called `lists.h`
+- Don’t forget to push your header file
+- All your header files should be include guarded
+
+
+# **`Tasks`**
+
+## **`0. Print a list of integers (mandatory)`**
+
 ### Write a function that prints all integers of a list.
 
->- Prototype: def print_list_integer(my_list=[]):
->- Format: one integer per line. See example
->- You are not allowed to import any module
->- You can assume that the list only contains integers
->- You are not allowed to cast integers into strings
->- You have to use str.format() to print integers
+- Prototype: `def print_list_integer(my_list=[]):`
+- Format: one integer per line. See example
+- You are not allowed to import any module
+- You can assume that the list only contains integers
+- You are not allowed to cast integers into strings
+- You have to use `str.format()` to print integers
 
-```c
+```sh
 guillaume@ubuntu:~/0x03$ cat 0-main.py
 #!/usr/bin/python3
 print_list_integer = __import__('0-print_list_integer').print_list_integer
@@ -79,22 +85,23 @@ guillaume@ubuntu:~/0x03$ ./0-main.py
 5
 guillaume@ubuntu:~/0x03$
 ```
-## Repo:
 
->- GitHub repository: alx-higher_level_programming
->- Directory: 0x03-python-data_structures
->- File: 0-print_list_integer.py
+## **`Repo:`**
 
-## 1. Secure access to an element in a list (mandatory)
+>- **`GitHub repository`**: ```alx-higher_level_programming```
+>- **`Directory`**: `0x03-python-data_structures`
+>- **`File`**: `0-print_list_integer.py`
+
+## **`1. Secure access to an element in a list (mandatory)`**
 ### Write a function that retrieves an element from a list like in C.
 
->- Prototype: def element_at(my_list, idx):
->- If idx is negative, the function should return None
->- If idx is out of range (> of number of element in my_list), the function should return None
->- You are not allowed to import any module
->- You are not allowed to use try/except
+- Prototype: `def element_at(my_list, idx):`
+- If idx is negative, the function should return None
+- If idx is out of range (> of number of element in `my_list`), the function should return None
+- You are not allowed to import any module
+- You are not allowed to use try/except
 
-```c
+```sh
 guillaume@ubuntu:~/0x03$ cat 1-main.py
 #!/usr/bin/python3
 element_at = __import__('1-element_at').element_at
@@ -107,22 +114,23 @@ guillaume@ubuntu:~/0x03$ ./1-main.py
 Element at index 3 is 4
 guillaume@ubuntu:~/0x03$
 ```
-## Repo:
+## **`Repo:`**
 
->- GitHub repository: alx-higher_level_programming
->- Directory: 0x03-python-data_structures
->- File: 1-element_at.py
+>- **`GitHub repository`**: ```alx-higher_level_programming```
+>- **`Directory`**: `0x03-python-data_structures`
+>- **`File`**: `1-element_at.py`
 
-## 2. Replace element (mandatory)
+## **`2. Replace element (mandatory)`**
+
 ### Write a function that replaces an element of a list at a specific position (like in C).
 
->- Prototype: def replace_in_list(my_list, idx, element):
->- If idx is negative, the function should not modify anything, and returns the original list
->- If idx is out of range (> of number of element in my_list), the function should not modify anything, and returns the original list
->- You are not allowed to import any module
->- You are not allowed to use try/except
+- Prototype: `def replace_in_list(my_list, idx, element):`
+- If idx is negative, the function should not modify anything, and returns the original list
+- If idx is out of range (> of number of element in `my_list`), the function should not modify anything, and returns the original list
+- You are not allowed to import any module
+- You are not allowed to use try/except
 
-```c
+```sh
 guillaume@ubuntu:~/0x03$ cat 2-main.py
 #!/usr/bin/python3
 replace_in_list = __import__('2-replace_in_list').replace_in_list
@@ -140,23 +148,25 @@ guillaume@ubuntu:~/0x03$ ./2-main.py
 [1, 2, 3, 9, 5]
 guillaume@ubuntu:~/0x03$
 ```
-## Repo:
 
->- GitHub repository: alx-higher_level_programming
->- Directory: 0x03-python-data_structures
->- File: 2-replace_in_list.py
+## **`Repo:`**
 
-## 3. Print a list of integers... in reverse! (mandatory)
+>- **`GitHub repository`**: ```alx-higher_level_programming```
+>- **`Directory`**: `0x03-python-data_structures`
+>- **`File`**: `2-replace_in_list.py`
+
+## **`3. Print a list of integers... in reverse! (mandatory)`**
+
 ### Write a function that prints all integers of a list, in reverse order.
 
->- Prototype: def print_reversed_list_integer(my_list=[]):
->- Format: one integer per line. See example
->- You are not allowed to import any module
->- You can assume that the list only contains integers
->- You are not allowed to cast integers into strings
->- You have to use str.format() to print integers
+- Prototype: `def print_reversed_list_integer(my_list=[]):`
+- Format: one integer per line. See example
+- You are not allowed to import any module
+- You can assume that the list only contains integers
+- You are not allowed to cast integers into strings
+- You have to use `str.format()` to print integers
 
-```c
+```sh
 guillaume@ubuntu:~/0x03$ cat 3-main.py
 #!/usr/bin/python3
 print_reversed_list_integer = __import__('3-print_reversed_list_integer').print_reversed_list_integer
@@ -172,22 +182,23 @@ guillaume@ubuntu:~/0x03$ ./3-main.py
 1
 guillaume@ubuntu:~/0x03$
 ```
-## Repo:
+## **`Repo:`**
 
->- GitHub repository: alx-higher_level_programming
->- Directory: 0x03-python-data_structures
->- File: 3-print_reversed_list_integer.py
+>- **`GitHub repository`**: ```alx-higher_level_programming```
+>- **`Directory`**: `0x03-python-data_structures`
+>- **`File`**: `3-print_reversed_list_integer.py`
 
-## 4. Replace in a copy (mandatory)
+## **`4. Replace in a copy (mandatory)`**
+
 ### Write a function that replaces an element in a list at a specific position without modifying the original list (like in C).
 
->- Prototype: def new_in_list(my_list, idx, element):
->- If idx is negative, the function should return a copy of the original list
->- If idx is out of range (> of number of element in my_list), the function should return a copy of the original list
->- You are not allowed to import any module
->- You are not allowed to use try/except
+- Prototype: `def new_in_list(my_list, idx, element):`
+- If idx is negative, the function should return a copy of the original list
+- If idx is out of range (> of number of element in `my_list`), the function should return a copy of the original list
+- You are not allowed to import any module
+- You are not allowed to use try/except
 
-```c
+```sh
 guillaume@ubuntu:~/0x03$ cat 4-main.py
 #!/usr/bin/python3
 new_in_list = __import__('4-new_in_list').new_in_list
@@ -206,21 +217,22 @@ guillaume@ubuntu:~/0x03$ ./4-main.py
 guillaume@ubuntu:~/0x03$
 ```
 
-## Repo:
+## **`Repo:`**
 
->- GitHub repository: alx-higher_level_programming
->- Directory: 0x03-python-data_structures
->- File: 4-new_in_list.py
+>- **`GitHub repository`**: ```alx-higher_level_programming```
+>- **`Directory`**: `0x03-python-data_structures`
+>- **`File`**: `4-new_in_list.py`
 
-## 5. Can you C me now? (mandatory)
+## **`5. Can you C me now? (mandatory)`**
+
 ### Write a function that removes all characters c and C from a string.
 
->- vPrototype: def no_c(my_string):
->- The function should return the new string
->- You are not allowed to import any module
->- You are not allowed to use str.replace()
+- vPrototype: `def no_c(my_string):`
+- The function should return the new string
+- You are not allowed to import any module
+- You are not allowed to use `str.replace()`
 
-```c
+```sh
 guillaume@ubuntu:~/0x03$ cat 5-main.py
 #!/usr/bin/env python3
 no_c = __import__('5-no_c').no_c
@@ -235,23 +247,25 @@ hiago
  is fun!
 guillaume@ubuntu:~/0x03$
 ```
-### Repo:
 
->- GitHub repository: alx-higher_level_programming
->- Directory: 0x03-python-data_structures
->- File: 5-no_c.py
+### **`Repo:`**
 
-## 6. Lists of lists = Matrix (mandatory)
+>- **`GitHub repository`**: ```alx-higher_level_programming```
+>- **`Directory`**: `0x03-python-data_structures`
+>- **`File`**: `5-no_c.py`
+
+## **`6. Lists of lists = Matrix (mandatory)`**
+
 ### Write a function that prints a matrix of integers.
 
->- Prototype: def print_matrix_integer(matrix=[[]]):
->- Format: see example
->- You are not allowed to import any module
->- You can assume that the list only contains integers
->- You are not allowed to cast integers into strings
->- You have to use str.format() to print integers
+- Prototype: `def print_matrix_integer(matrix=[[]]):`
+- Format: see example
+- You are not allowed to import any module
+- You can assume that the list only contains integers
+- You are not allowed to cast integers into strings
+- You have to use `str.format()` to print integers
 
-```c
+```sh
 guillaume@ubuntu:~/0x03$ cat 6-main.py
 #!/usr/bin/python3
 print_matrix_integer = __import__('6-print_matrix_integer').print_matrix_integer
@@ -274,25 +288,27 @@ guillaume@ubuntu:~/0x03$ ./6-main.py | cat -e
 $
 guillaume@ubuntu:~/0x03$
 ```
-## Repo:
 
->- GitHub repository: alx-higher_level_programming
->- Directory: 0x03-python-data_structures
->- File: 6-print_matrix_integer.py
+## **`Repo:`**
 
-## 7. Tuples addition (mandatory)
+>- **`GitHub repository`**: ```alx-higher_level_programming```
+>- **`Directory`**: `0x03-python-data_structures`
+>- **`File`**: `6-print_matrix_integer.py`
+
+## **`7. Tuples addition (mandatory)`**
+
 ### Write a function that adds 2 tuples.
 
->- Prototype: def add_tuple(tuple_a=(), tuple_b=()):
->- Returns a tuple with 2 integers:
->- The first element should be the addition of the first element of each argument
->- The second element should be the addition of the second element of each argument
->- You are not allowed to import any module
->- You can assume that the two tuples will only contain integers
->- If a tuple is smaller than 2, use the value 0 for each missing integer
->- If a tuple is bigger than 2, use only the first 2 integers
+- Prototype: `def add_tuple(tuple_a=(), tuple_b=()):`
+- Returns a tuple with 2 integers:
+    - The first element should be the addition of the first element of each argument
+    - The second element should be the addition of the second element of each argument
+- You are not allowed to import any module
+- You can assume that the two tuples will only contain integers
+- If a tuple is smaller than 2, use the value 0 for each missing integer
+- If a tuple is bigger than 2, use only the first 2 integers
 
-```c
+```sh
 guillaume@ubuntu:~/0x03$ cat 7-main.py
 #!/usr/bin/python3
 add_tuple = __import__('7-add_tuple').add_tuple
@@ -311,20 +327,22 @@ guillaume@ubuntu:~/0x03$ ./7-main.py
 (1, 89)
 guillaume@ubuntu:~/0x03$
 ```
-## Repo:
 
->- GitHub repository: alx-higher_level_programming
->- Directory: 0x03-python-data_structures
->- File: 7-add_tuple.py
+## **`Repo:`**
 
-## 8. More returns! (mandatory)
+>- **`GitHub repository`**: ```alx-higher_level_programming```
+>- **`Directory`**: `0x03-python-data_structures`
+>- **`File`**: `7-add_tuple.py`
+
+## **`8. More returns! (mandatory)`**
+
 ### Write a function that returns a tuple with the length of a string and its first character.
 
->- Prototype: def multiple_returns(sentence):
->- If the sentence is empty, the first character should be equal to None
->- You are not allowed to import any module
+- Prototype: `def multiple_returns(sentence):`
+- If the sentence is empty, the first character should be equal to None
+- You are not allowed to import any module
 
-```c
+```sh
 guillaume@ubuntu:~/0x03$ cat 8-main.py
 #!/usr/bin/python3
 multiple_returns = __import__('8-multiple_returns').multiple_returns
@@ -337,22 +355,24 @@ guillaume@ubuntu:~/0x03$ ./8-main.py
 Length: 22 - First character: A
 guillaume@ubuntu:~/0x03$
 ```
-## Repo:
 
->- GitHub repository: alx-higher_level_programming
->- Directory: 0x03-python-data_structures
->- File: 8-multiple_returns.py
+## **`Repo:`**
 
-## 9. Find the max (mandatory)
+>- **`GitHub repository`**: ```alx-higher_level_programming```
+>- **`Directory`**: `0x03-python-data_structures`
+>- **`File`**: `8-multiple_returns.py`
+
+## **`9. Find the max (mandatory)`**
+
 ### Write a function that finds the biggest integer of a list.
 
->- Prototype: def max_integer(my_list=[]):
->- If the list is empty, return None
->- You can assume that the list only contains integers
->- You are not allowed to import any module
->- You are not allowed to use the builtin max()
+- Prototype: `def max_integer(my_list=[]):`
+- If the list is empty, return None
+- You can assume that the list only contains integers
+- You are not allowed to import any module
+- You are not allowed to use the builtin max()
 
-```c
+```sh
 guillaume@ubuntu:~/0x03$ cat 9-main.py
 #!/usr/bin/python3
 max_integer = __import__('9-max_integer').max_integer
@@ -365,21 +385,23 @@ guillaume@ubuntu:~/0x03$ ./9-main.py
 Max: 90
 guillaume@ubuntu:~/0x03$
 ```
-## Repo:
 
->- GitHub repository: alx-higher_level_programming
->- Directory: 0x03-python-data_structures
->- File: 9-max_integer.py
+## **`Repo:`**
 
-## 10. Only by 2 (mandatory)
+>- **`GitHub repository`**: ```alx-higher_level_programming```
+>- **`Directory`**: `0x03-python-data_structures`
+>- **`File`**: `9-max_integer.py`
+
+## **`10. Only by 2 (mandatory)`**
+
 ### Write a function that finds all multiples of 2 in a list.
 
->- Prototype: def divisible_by_2(my_list=[]):
->- Return a new list with True or False, depending on whether the integer at the same position in the original list is a multiple of 2
->- The new list should have the same size as the original list
->- You are not allowed to import any module
+- Prototype: `def divisible_by_2(my_list=[]):`
+- Return a new list with True or False, depending on whether the integer at the same position in the original list is a multiple of 2
+- The new list should have the same size as the original list
+- You are not allowed to import any module
 
-```c
+```sh
 guillaume@ubuntu:~/0x03$ cat 10-main.py
 #!/usr/bin/python3
 divisible_by_2 = __import__('10-divisible_by_2').divisible_by_2
@@ -402,21 +424,23 @@ guillaume@ubuntu:~/0x03$ ./10-main.py
 6 is divisible by 2
 guillaume@ubuntu:~/0x03$
 ```
-## Repo:
 
->- GitHub repository: alx-higher_level_programming
->- Directory: 0x03-python-data_structures
->- File: 10-divisible_by_2.py
+## **`Repo:`**
 
-## 11. Delete at (mandatory0
+>- **`GitHub repository`**: ```alx-higher_level_programming```
+>- **`Directory`**: `0x03-python-data_structures`
+>- **`File`**: `10-divisible_by_2.py`
+
+## **`11. Delete at (mandatory)`**
+
 ### Write a function that deletes the item at a specific position in a list.
 
->- Prototype: def delete_at(my_list=[], idx=0):
->- If idx is negative or out of range, nothing change (returns the same list)
->- You are not allowed to use pop()
->- You are not allowed to import any module
+- Prototype: `def delete_at(my_list=[], idx=0):`
+- If idx is negative or out of range, nothing change (returns the same list)
+- You are not allowed to use `pop()`
+- You are not allowed to import any module
 
-```c
+```sh
 guillaume@ubuntu:~/0x03$ cat 11-main.py
 #!/usr/bin/python3
 delete_at = __import__('11-delete_at').delete_at
@@ -432,11 +456,12 @@ guillaume@ubuntu:~/0x03$ ./11-main.py
 [1, 2, 3, 5]
 guillaume@ubuntu:~/0x03$
 ```
-## Repo:
 
->- GitHub repository: alx-higher_level_programming
->- Directory: 0x03-python-data_structures
->- File: 11-delete_at.py
+## **`Repo:`**
+
+>- **`GitHub repository`**: ```alx-higher_level_programming```
+>- **`Directory`**: `0x03-python-data_structures`
+>- **`File`**: `11-delete_at.py`
 
 ## 12. Switch
 mandatory
@@ -446,31 +471,33 @@ mandatory
 >- Your code should be inserted where the comment is (line 4)
 >- Your program should be exactly 5 lines long
 
-```c
+```sh
 guillaume@ubuntu:~/py/0x03$ ./12-switch.py
 a=10 - b=89
 guillaume@ubuntu:~/py/0x03$ wc -l 12-switch.py
 5 12-switch.py
 guillaume@ubuntu:~/py/0x03$
 ```
-## Repo:
 
->- GitHub repository: alx-higher_level_programming
->- Directory: 0x03-python-data_structures
->- File: 12-switch.py
+## **`Repo:`**
 
-## 13. Linked list palindrome (mandatory)
+>- **`GitHub repository`**: ```alx-higher_level_programming```
+>- **`Directory`**: `0x03-python-data_structures`
+>- **`File`**: `12-switch.py`
+
+## **`13. Linked list palindrome (mandatory)`**
+
 ### Technical interview preparation:
 
->- You are not allowed to google anything
->- Whiteboard first
->- Write a function in C that checks if a singly linked list is a palindrome.
+- You are not allowed to google anything
+- Whiteboard first
+- Write a function in C that checks if a singly linked list is a palindrome.
 
->- Prototype: int is_palindrome(listint_t **head);
->- Return: 0 if it is not a palindrome, 1 if it is a palindrome
->- An empty list is considered a palindrome
+- Prototype: `int is_palindrome(listint_t **head);`
+- Return: `0` if it is not a palindrome, `1` if it is a palindrome
+- An empty list is considered a palindrome
 
-```c
+```sh
 carrie@ubuntu:0x03$ cat lists.h
 #ifndef LISTS_H
 #define LISTS_H
@@ -498,7 +525,8 @@ int is_palindrome(listint_t **head);
 #endif /* LISTS_H */
 carrie@ubuntu:0x03$
 ```
-```c
+
+```sh
 carrie@ubuntu:0x03$ cat linked_lists.c
 #include <stdio.h>
 #include <stdlib.h>
@@ -577,7 +605,7 @@ void free_listint(listint_t *head)
 carrie@ubuntu:0x03$
 ```
 
-```c
+```sh
 carrie@ubuntu:0x03$ cat 13-main.c
 #include <stdio.h>
 #include <stdlib.h>
@@ -616,7 +644,8 @@ int main(void)
 }
 carrie@ubuntu:0x03$
 ```
-```c
+
+```sh
 carrie@ubuntu:0x03$ gcc -Wall -Werror -Wextra -pedantic 13-main.c linked_lists.c 13-is_palindrome.c -o palindrome
 carrie@ubuntu:0x03$ ./palindrome
 1
@@ -632,8 +661,9 @@ carrie@ubuntu:0x03$ ./palindrome
 Linked list is a palindrome
 carrie@ubuntu:0x03$
 ```
-## Repo:
 
->- GitHub repository: alx-higher_level_programming
->- Directory: 0x03-python-data_structures
->- File: 13-is_palindrome.c, lists.h
+## **`Repo:`**
+
+>- **`GitHub repository`**: ```alx-higher_level_programming```
+>- **`Directory`**: `0x03-python-data_structures`
+>- **`File`**: `13-is_palindrome.c, lists.h`
