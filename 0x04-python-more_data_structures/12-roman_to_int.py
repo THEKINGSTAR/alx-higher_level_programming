@@ -13,6 +13,8 @@ def roman_to_int(roman_string):
     roman_string = roman_string.upper()
 
     for idx, digt in enumerate(roman_string):
+        if digt not in roman:
+            return None
         if idx + 1 < len(roman_string):
             if roman[digt] < roman[roman_string[idx + 1]]:
                 # print(f"Subtrac: {roman[digt]} from {roman_string[idx+1]}")
