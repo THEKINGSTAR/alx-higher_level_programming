@@ -5,7 +5,7 @@ def roman_to_int(roman_string):
     1	5	10	50	100	500	1000
     '''
     if roman_string is None or not isinstance(roman_string, str):
-        return None
+        return 0
     roman = {'I': 1, 'V': 5, "X": 10,
              "L": 50, "C": 100, "D": 500,
              "M": 1000}
@@ -14,7 +14,7 @@ def roman_to_int(roman_string):
 
     for idx, digt in enumerate(roman_string):
         if digt not in roman:
-            return None
+            return 0
         if idx + 1 < len(roman_string):
             if roman[digt] < roman[roman_string[idx + 1]]:
                 # print(f"Subtrac: {roman[digt]} from {roman_string[idx+1]}")
