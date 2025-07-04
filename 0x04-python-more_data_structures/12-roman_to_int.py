@@ -26,6 +26,8 @@ def roman_to_int(roman_string):
     return rom_dec
 
 
+# Example usage:
+'''
 print(roman_to_int("XIX"))  # Example usage, should return 19:
 print(roman_to_int("XLII"))  # Example usage, should return 42:
 print(roman_to_int("MCMXCIV"))  # Example usage, should return 1994
@@ -35,3 +37,4 @@ print(roman_to_int("MMXXIV"))  # Example usage, should return 2024
 print(roman_to_int("MMXXV"))  # Example usage, should return 2025
 print(roman_to_int("MMXXVI"))  # Example usage, should return 2026
 print(roman_to_int("MMXXVII"))  # Example usage, should return 2027
+'''
