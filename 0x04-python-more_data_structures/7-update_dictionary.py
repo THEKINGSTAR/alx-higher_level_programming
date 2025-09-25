@@ -6,4 +6,4 @@ def update_dictionary(a_dictionary, key, value):
     else:
         a_dictionary[k] = value
 
-    return (a_dictionary)
+    return a_dictionary

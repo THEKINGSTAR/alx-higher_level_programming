@@ -9,4 +9,4 @@ def square_matrix_simple(matrix=[]):
             sub.append(matrix[i][j] ** 2)
         n_matx.append(sub)
 
-    return (n_matx)
+    return n_matx
